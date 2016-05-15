@@ -1,0 +1,1882 @@
+com.google.zxing.BarcodeFormat -> com.a.a.a:
+    java.util.Hashtable VALUES -> p
+    com.google.zxing.BarcodeFormat QR_CODE -> a
+    com.google.zxing.BarcodeFormat DATA_MATRIX -> b
+    com.google.zxing.BarcodeFormat UPC_E -> c
+    com.google.zxing.BarcodeFormat UPC_A -> d
+    com.google.zxing.BarcodeFormat EAN_8 -> e
+    com.google.zxing.BarcodeFormat EAN_13 -> f
+    com.google.zxing.BarcodeFormat UPC_EAN_EXTENSION -> g
+    com.google.zxing.BarcodeFormat CODE_128 -> h
+    com.google.zxing.BarcodeFormat CODE_39 -> i
+    com.google.zxing.BarcodeFormat CODE_93 -> j
+    com.google.zxing.BarcodeFormat CODABAR -> k
+    com.google.zxing.BarcodeFormat ITF -> l
+    com.google.zxing.BarcodeFormat RSS14 -> m
+    com.google.zxing.BarcodeFormat PDF417 -> n
+    com.google.zxing.BarcodeFormat RSS_EXPANDED -> o
+    java.lang.String name -> q
+    java.lang.String toString() -> toString
+com.google.zxing.Binarizer -> com.a.a.b:
+    com.google.zxing.LuminanceSource source -> a
+    com.google.zxing.LuminanceSource getLuminanceSource() -> a
+    com.google.zxing.common.BitArray getBlackRow(int,com.google.zxing.common.BitArray) -> a
+    com.google.zxing.common.BitMatrix getBlackMatrix() -> b
+com.google.zxing.BinaryBitmap -> com.a.a.c:
+    com.google.zxing.Binarizer binarizer -> a
+    com.google.zxing.common.BitMatrix matrix -> b
+    int getWidth() -> a
+    int getHeight() -> b
+    com.google.zxing.common.BitArray getBlackRow(int,com.google.zxing.common.BitArray) -> a
+    com.google.zxing.common.BitMatrix getBlackMatrix() -> c
+    boolean isRotateSupported() -> d
+com.google.zxing.ChecksumException -> com.a.a.d:
+    com.google.zxing.ChecksumException instance -> a
+    com.google.zxing.ChecksumException getChecksumInstance() -> a
+com.google.zxing.DecodeHintType -> com.a.a.e:
+    com.google.zxing.DecodeHintType OTHER -> a
+    com.google.zxing.DecodeHintType PURE_BARCODE -> b
+    com.google.zxing.DecodeHintType POSSIBLE_FORMATS -> c
+    com.google.zxing.DecodeHintType TRY_HARDER -> d
+    com.google.zxing.DecodeHintType CHARACTER_SET -> e
+    com.google.zxing.DecodeHintType ALLOWED_LENGTHS -> f
+    com.google.zxing.DecodeHintType ASSUME_CODE_39_CHECK_DIGIT -> g
+    com.google.zxing.DecodeHintType NEED_RESULT_POINT_CALLBACK -> h
+com.google.zxing.FormatException -> com.a.a.f:
+    com.google.zxing.FormatException instance -> a
+    com.google.zxing.FormatException getFormatInstance() -> a
+com.google.zxing.LuminanceSource -> com.a.a.g:
+    int width -> a
+    int height -> b
+    byte[] getRow(int,byte[]) -> a
+    byte[] getMatrix() -> a
+    int getWidth() -> b
+    int getHeight() -> c
+com.google.zxing.MultiFormatReader -> com.a.a.h:
+    java.util.Hashtable hints -> a
+    java.util.Vector readers -> b
+    com.google.zxing.Result decode(com.google.zxing.BinaryBitmap,java.util.Hashtable) -> a
+    com.google.zxing.Result decodeWithState(com.google.zxing.BinaryBitmap) -> a
+    void setHints(java.util.Hashtable) -> a
+    void reset() -> a
+    com.google.zxing.Result decodeInternal(com.google.zxing.BinaryBitmap) -> b
+com.google.zxing.NotFoundException -> com.a.a.i:
+    com.google.zxing.NotFoundException instance -> a
+    com.google.zxing.NotFoundException getNotFoundInstance() -> a
+com.google.zxing.Reader -> com.a.a.j:
+    com.google.zxing.Result decode(com.google.zxing.BinaryBitmap,java.util.Hashtable) -> a
+    void reset() -> a
+com.google.zxing.ReaderException -> com.a.a.k:
+    java.lang.Throwable fillInStackTrace() -> fillInStackTrace
+com.google.zxing.Result -> com.a.a.l:
+    java.lang.String text -> a
+    byte[] rawBytes -> b
+    com.google.zxing.ResultPoint[] resultPoints -> c
+    com.google.zxing.BarcodeFormat format -> d
+    java.util.Hashtable resultMetadata -> e
+    long timestamp -> f
+    java.lang.String getText() -> a
+    com.google.zxing.ResultPoint[] getResultPoints() -> b
+    com.google.zxing.BarcodeFormat getBarcodeFormat() -> c
+    java.util.Hashtable getResultMetadata() -> d
+    void putMetadata(com.google.zxing.ResultMetadataType,java.lang.Object) -> a
+    void putAllMetadata(java.util.Hashtable) -> a
+    void addResultPoints(com.google.zxing.ResultPoint[]) -> a
+    java.lang.String toString() -> toString
+com.google.zxing.ResultMetadataType -> com.a.a.m:
+    java.util.Hashtable VALUES -> h
+    com.google.zxing.ResultMetadataType OTHER -> a
+    com.google.zxing.ResultMetadataType ORIENTATION -> b
+    com.google.zxing.ResultMetadataType BYTE_SEGMENTS -> c
+    com.google.zxing.ResultMetadataType ERROR_CORRECTION_LEVEL -> d
+    com.google.zxing.ResultMetadataType ISSUE_NUMBER -> e
+    com.google.zxing.ResultMetadataType SUGGESTED_PRICE -> f
+    com.google.zxing.ResultMetadataType POSSIBLE_COUNTRY -> g
+    java.lang.String name -> i
+    java.lang.String toString() -> toString
+com.google.zxing.ResultPoint -> com.a.a.n:
+    float x -> a
+    float y -> b
+    float getX() -> a
+    float getY() -> b
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    void orderBestPatterns(com.google.zxing.ResultPoint[]) -> a
+    float distance(com.google.zxing.ResultPoint,com.google.zxing.ResultPoint) -> a
+com.google.zxing.ResultPointCallback -> com.a.a.o:
+    void foundPossibleResultPoint(com.google.zxing.ResultPoint) -> a
+com.google.zxing.common.BitArray -> com.a.a.a.a:
+    int[] bits -> a
+    int size -> b
+    boolean get(int) -> a
+    void set(int) -> b
+    boolean isRange$486912e3(int,int) -> a
+    void reverse() -> a
+    java.lang.String toString() -> toString
+com.google.zxing.common.BitMatrix -> com.a.a.a.b:
+    int width -> a
+    int height -> b
+    int rowSize -> c
+    int[] bits -> d
+    boolean get(int,int) -> a
+    void set(int,int) -> b
+    void setRegion(int,int,int,int) -> a
+    int[] getTopLeftOnBit() -> a
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+com.google.zxing.common.BitSource -> com.a.a.a.c:
+    byte[] bytes -> a
+    int byteOffset -> b
+    int bitOffset -> c
+    int readBits(int) -> a
+    int available() -> a
+com.google.zxing.common.CharacterSetECI -> com.a.a.a.d:
+    java.util.Hashtable VALUE_TO_ECI -> a
+    java.util.Hashtable NAME_TO_ECI -> b
+    java.lang.String encodingName -> c
+    java.lang.String getEncodingName() -> a
+    void addCharacterSet(int,java.lang.String) -> a
+    void addCharacterSet(int,java.lang.String[]) -> a
+    com.google.zxing.common.CharacterSetECI getCharacterSetECIByValue(int) -> a
+com.google.zxing.common.Collections -> com.a.a.a.e:
+    void insertionSort(java.util.Vector,com.google.zxing.common.Comparator) -> a
+com.google.zxing.common.Comparator -> com.a.a.a.f:
+    int compare(java.lang.Object,java.lang.Object) -> a
+com.google.zxing.common.DecoderResult -> com.a.a.a.g:
+    byte[] rawBytes -> a
+    java.lang.String text -> b
+    java.util.Vector byteSegments -> c
+    com.google.zxing.qrcode.decoder.ErrorCorrectionLevel ecLevel -> d
+    byte[] getRawBytes() -> a
+    java.lang.String getText() -> b
+    java.util.Vector getByteSegments() -> c
+    com.google.zxing.qrcode.decoder.ErrorCorrectionLevel getECLevel() -> d
+com.google.zxing.common.DefaultGridSampler -> com.a.a.a.h:
+    com.google.zxing.common.BitMatrix sampleGrid(com.google.zxing.common.BitMatrix,int,float,float,float,float,float,float,float,float,float,float,float,float,float,float,float,float) -> a
+    com.google.zxing.common.BitMatrix sampleGrid(com.google.zxing.common.BitMatrix,int,com.google.zxing.common.PerspectiveTransform) -> a
+com.google.zxing.common.DetectorResult -> com.a.a.a.i:
+    com.google.zxing.common.BitMatrix bits -> a
+    com.google.zxing.ResultPoint[] points -> b
+    com.google.zxing.common.BitMatrix getBits() -> a
+    com.google.zxing.ResultPoint[] getPoints() -> b
+com.google.zxing.common.ECI -> com.a.a.a.j:
+    int value -> a
+com.google.zxing.common.GlobalHistogramBinarizer -> com.a.a.a.k:
+    byte[] luminances -> a
+    int[] buckets -> b
+    com.google.zxing.common.BitArray getBlackRow(int,com.google.zxing.common.BitArray) -> a
+    com.google.zxing.common.BitMatrix getBlackMatrix() -> b
+    void initArrays(int) -> a
+    int estimateBlackPoint(int[]) -> a
+com.google.zxing.common.GridSampler -> com.a.a.a.l:
+    com.google.zxing.common.GridSampler gridSampler -> a
+    com.google.zxing.common.GridSampler getInstance() -> a
+    com.google.zxing.common.BitMatrix sampleGrid(com.google.zxing.common.BitMatrix,int,float,float,float,float,float,float,float,float,float,float,float,float,float,float,float,float) -> a
+    com.google.zxing.common.BitMatrix sampleGrid(com.google.zxing.common.BitMatrix,int,com.google.zxing.common.PerspectiveTransform) -> a
+com.google.zxing.common.HybridBinarizer -> com.a.a.a.m:
+    com.google.zxing.common.BitMatrix matrix -> a
+    com.google.zxing.common.BitMatrix getBlackMatrix() -> b
+com.google.zxing.common.PerspectiveTransform -> com.a.a.a.n:
+    float a11 -> a
+    float a12 -> b
+    float a13 -> c
+    float a21 -> d
+    float a22 -> e
+    float a23 -> f
+    float a31 -> g
+    float a32 -> h
+    float a33 -> i
+    com.google.zxing.common.PerspectiveTransform quadrilateralToQuadrilateral(float,float,float,float,float,float,float,float,float,float,float,float,float,float,float,float) -> a
+    void transformPoints(float[]) -> a
+    com.google.zxing.common.PerspectiveTransform squareToQuadrilateral(float,float,float,float,float,float,float,float) -> a
+com.google.zxing.common.StringUtils -> com.a.a.a.o:
+    java.lang.String PLATFORM_DEFAULT_ENCODING -> a
+    boolean ASSUME_SHIFT_JIS -> b
+    java.lang.String guessEncoding(byte[],java.util.Hashtable) -> a
+com.google.zxing.common.detector.WhiteRectangleDetector -> com.a.a.a.a.a:
+    com.google.zxing.common.BitMatrix image -> a
+    int height -> b
+    int width -> c
+    com.google.zxing.ResultPoint[] detect() -> a
+    com.google.zxing.ResultPoint getBlackPointOnSegment(float,float,float,float) -> a
+    boolean containsBlackPoint(int,int,int,boolean) -> a
+com.google.zxing.common.reedsolomon.GF256 -> com.a.a.a.b.a:
+    com.google.zxing.common.reedsolomon.GF256 QR_CODE_FIELD -> a
+    com.google.zxing.common.reedsolomon.GF256 DATA_MATRIX_FIELD -> b
+    int[] expTable -> c
+    int[] logTable -> d
+    com.google.zxing.common.reedsolomon.GF256Poly zero -> e
+    com.google.zxing.common.reedsolomon.GF256Poly one -> f
+    com.google.zxing.common.reedsolomon.GF256Poly getZero() -> a
+    com.google.zxing.common.reedsolomon.GF256Poly getOne() -> b
+    com.google.zxing.common.reedsolomon.GF256Poly buildMonomial(int,int) -> a
+    int addOrSubtract(int,int) -> b
+    int exp(int) -> a
+    int log(int) -> b
+    int inverse(int) -> c
+    int multiply(int,int) -> c
+com.google.zxing.common.reedsolomon.GF256Poly -> com.a.a.a.b.b:
+    com.google.zxing.common.reedsolomon.GF256 field -> a
+    int[] coefficients -> b
+    int getDegree() -> a
+    boolean isZero() -> b
+    int getCoefficient(int) -> a
+    int evaluateAt(int) -> b
+    com.google.zxing.common.reedsolomon.GF256Poly addOrSubtract(com.google.zxing.common.reedsolomon.GF256Poly) -> a
+    com.google.zxing.common.reedsolomon.GF256Poly multiply(com.google.zxing.common.reedsolomon.GF256Poly) -> b
+    com.google.zxing.common.reedsolomon.GF256Poly multiply(int) -> c
+    com.google.zxing.common.reedsolomon.GF256Poly multiplyByMonomial(int,int) -> a
+    java.lang.String toString() -> toString
+com.google.zxing.common.reedsolomon.ReedSolomonDecoder -> com.a.a.a.b.c:
+    com.google.zxing.common.reedsolomon.GF256 field -> a
+    void decode(int[],int) -> a
+com.google.zxing.common.reedsolomon.ReedSolomonException -> com.a.a.a.b.d:
+com.google.zxing.datamatrix.DataMatrixReader -> com.a.a.b.a:
+    com.google.zxing.ResultPoint[] NO_POINTS -> a
+    com.google.zxing.datamatrix.decoder.Decoder decoder -> b
+    com.google.zxing.Result decode(com.google.zxing.BinaryBitmap,java.util.Hashtable) -> a
+    void reset() -> a
+com.google.zxing.datamatrix.decoder.BitMatrixParser -> com.a.a.b.a.a:
+    com.google.zxing.common.BitMatrix mappingBitMatrix -> a
+    com.google.zxing.common.BitMatrix readMappingMatrix -> b
+    com.google.zxing.datamatrix.decoder.Version version -> c
+    com.google.zxing.datamatrix.decoder.Version readVersion(com.google.zxing.common.BitMatrix) -> a
+    byte[] readCodewords() -> a
+    boolean readModule(int,int,int,int) -> a
+    int readUtah(int,int,int,int) -> b
+    com.google.zxing.common.BitMatrix extractDataRegion(com.google.zxing.common.BitMatrix) -> b
+com.google.zxing.datamatrix.decoder.DataBlock -> com.a.a.b.a.b:
+    int numDataCodewords -> a
+    byte[] codewords -> b
+    com.google.zxing.datamatrix.decoder.DataBlock[] getDataBlocks(byte[],com.google.zxing.datamatrix.decoder.Version) -> a
+    int getNumDataCodewords() -> a
+    byte[] getCodewords() -> b
+com.google.zxing.datamatrix.decoder.DecodedBitStreamParser -> com.a.a.b.a.c:
+    char[] C40_BASIC_SET_CHARS -> a
+    char[] C40_SHIFT2_SET_CHARS -> b
+    char[] TEXT_BASIC_SET_CHARS -> c
+    char[] TEXT_SHIFT3_SET_CHARS -> d
+    com.google.zxing.common.DecoderResult decode(byte[]) -> a
+    int decodeAsciiSegment(com.google.zxing.common.BitSource,java.lang.StringBuffer,java.lang.StringBuffer) -> a
+    void decodeC40Segment(com.google.zxing.common.BitSource,java.lang.StringBuffer) -> a
+    void decodeTextSegment(com.google.zxing.common.BitSource,java.lang.StringBuffer) -> b
+    void decodeAnsiX12Segment(com.google.zxing.common.BitSource,java.lang.StringBuffer) -> c
+    void parseTwoBytes(int,int,int[]) -> a
+    void decodeEdifactSegment(com.google.zxing.common.BitSource,java.lang.StringBuffer) -> d
+    void decodeBase256Segment(com.google.zxing.common.BitSource,java.lang.StringBuffer,java.util.Vector) -> a
+com.google.zxing.datamatrix.decoder.Decoder -> com.a.a.b.a.d:
+    com.google.zxing.common.reedsolomon.ReedSolomonDecoder rsDecoder -> a
+    com.google.zxing.common.DecoderResult decode(com.google.zxing.common.BitMatrix) -> a
+com.google.zxing.datamatrix.decoder.Version -> com.a.a.b.a.e:
+    com.google.zxing.datamatrix.decoder.Version[] VERSIONS -> a
+    int versionNumber -> b
+    int symbolSizeRows -> c
+    int symbolSizeColumns -> d
+    int dataRegionSizeRows -> e
+    int dataRegionSizeColumns -> f
+    com.google.zxing.datamatrix.decoder.Version$ECBlocks ecBlocks -> g
+    int totalCodewords -> h
+    int getVersionNumber() -> a
+    int getSymbolSizeRows() -> b
+    int getSymbolSizeColumns() -> c
+    int getDataRegionSizeRows() -> d
+    int getDataRegionSizeColumns() -> e
+    int getTotalCodewords() -> f
+    com.google.zxing.datamatrix.decoder.Version$ECBlocks getECBlocks() -> g
+    com.google.zxing.datamatrix.decoder.Version getVersionForDimensions(int,int) -> a
+    java.lang.String toString() -> toString
+com.google.zxing.datamatrix.decoder.Version$ECB -> com.a.a.b.a.f:
+    int count -> a
+    int dataCodewords -> b
+    int getCount() -> a
+    int getDataCodewords() -> b
+com.google.zxing.datamatrix.decoder.Version$ECBlocks -> com.a.a.b.a.g:
+    int ecCodewords -> a
+    com.google.zxing.datamatrix.decoder.Version$ECB[] ecBlocks -> b
+    int getECCodewords() -> a
+    com.google.zxing.datamatrix.decoder.Version$ECB[] getECBlocks() -> b
+com.google.zxing.datamatrix.detector.Detector -> com.a.a.b.b.a:
+    java.lang.Integer[] INTEGERS -> a
+    com.google.zxing.common.BitMatrix image -> b
+    com.google.zxing.common.detector.WhiteRectangleDetector rectangleDetector -> c
+    com.google.zxing.common.DetectorResult detect() -> a
+    boolean isValid(com.google.zxing.ResultPoint) -> a
+    int distance(com.google.zxing.ResultPoint,com.google.zxing.ResultPoint) -> a
+    void increment(java.util.Hashtable,com.google.zxing.ResultPoint) -> a
+    com.google.zxing.datamatrix.detector.Detector$ResultPointsAndTransitions transitionsBetween(com.google.zxing.ResultPoint,com.google.zxing.ResultPoint) -> b
+com.google.zxing.datamatrix.detector.Detector$ResultPointsAndTransitions -> com.a.a.b.b.b:
+    com.google.zxing.ResultPoint from -> a
+    com.google.zxing.ResultPoint to -> b
+    int transitions -> c
+    com.google.zxing.ResultPoint getFrom() -> a
+    com.google.zxing.ResultPoint getTo() -> b
+    int getTransitions() -> c
+    java.lang.String toString() -> toString
+com.google.zxing.datamatrix.detector.Detector$ResultPointsAndTransitionsComparator -> com.a.a.b.b.c:
+    int compare(java.lang.Object,java.lang.Object) -> a
+com.google.zxing.oned.CodaBarReader -> com.a.a.c.a:
+    char[] ALPHABET -> a
+    int[] CHARACTER_ENCODINGS -> b
+    char[] STARTEND_ENCODING -> c
+    com.google.zxing.Result decodeRow(int,com.google.zxing.common.BitArray,java.util.Hashtable) -> a
+    int[] findAsteriskPattern(com.google.zxing.common.BitArray) -> a
+    boolean arrayContains(char[],char) -> a
+    char toNarrowWidePattern(int[]) -> a
+com.google.zxing.oned.Code128Reader -> com.a.a.c.b:
+    int[][] CODE_PATTERNS -> a
+    int decodeCode(com.google.zxing.common.BitArray,int[],int) -> a
+    com.google.zxing.Result decodeRow(int,com.google.zxing.common.BitArray,java.util.Hashtable) -> a
+com.google.zxing.oned.Code39Reader -> com.a.a.c.c:
+    char[] ALPHABET -> b
+    int[] CHARACTER_ENCODINGS -> a
+    int ASTERISK_ENCODING -> c
+    boolean usingCheckDigit -> d
+    boolean extendedMode -> e
+    com.google.zxing.Result decodeRow(int,com.google.zxing.common.BitArray,java.util.Hashtable) -> a
+    int toNarrowWidePattern(int[]) -> a
+    char patternToChar(int) -> a
+    java.lang.String decodeExtended(java.lang.StringBuffer) -> a
+com.google.zxing.oned.Code93Reader -> com.a.a.c.d:
+    char[] ALPHABET -> a
+    int[] CHARACTER_ENCODINGS -> b
+    int ASTERISK_ENCODING -> c
+    com.google.zxing.Result decodeRow(int,com.google.zxing.common.BitArray,java.util.Hashtable) -> a
+    int toPattern(int[]) -> a
+    char patternToChar(int) -> a
+    java.lang.String decodeExtended(java.lang.StringBuffer) -> a
+    void checkOneChecksum(java.lang.StringBuffer,int,int) -> a
+com.google.zxing.oned.EAN13Reader -> com.a.a.c.e:
+    int[] FIRST_DIGIT_ENCODINGS -> a
+    int[] decodeMiddleCounters -> f
+    int decodeMiddle(com.google.zxing.common.BitArray,int[],java.lang.StringBuffer) -> a
+    com.google.zxing.BarcodeFormat getBarcodeFormat() -> b
+com.google.zxing.oned.EAN8Reader -> com.a.a.c.f:
+    int[] decodeMiddleCounters -> a
+    int decodeMiddle(com.google.zxing.common.BitArray,int[],java.lang.StringBuffer) -> a
+    com.google.zxing.BarcodeFormat getBarcodeFormat() -> b
+com.google.zxing.oned.EANManufacturerOrgSupport -> com.a.a.c.g:
+    java.util.Vector ranges -> a
+    java.util.Vector countryIdentifiers -> b
+    java.lang.String lookupCountryIdentifier(java.lang.String) -> a
+    void add(int[],java.lang.String) -> a
+    void initIfNeeded() -> a
+com.google.zxing.oned.ITFReader -> com.a.a.c.h:
+    int[] DEFAULT_ALLOWED_LENGTHS -> b
+    int narrowLineWidth -> c
+    int[] START_PATTERN -> d
+    int[] END_PATTERN_REVERSED -> e
+    int[][] PATTERNS -> a
+    com.google.zxing.Result decodeRow(int,com.google.zxing.common.BitArray,java.util.Hashtable) -> a
+    void decodeMiddle(com.google.zxing.common.BitArray,int,int,java.lang.StringBuffer) -> a
+    void validateQuietZone(com.google.zxing.common.BitArray,int) -> a
+    int skipWhiteSpace(com.google.zxing.common.BitArray) -> a
+    int[] decodeEnd(com.google.zxing.common.BitArray) -> b
+    int[] findGuardPattern(com.google.zxing.common.BitArray,int,int[]) -> c
+    int decodeDigit(int[]) -> a
+com.google.zxing.oned.MultiFormatOneDReader -> com.a.a.c.i:
+    java.util.Vector readers -> a
+    com.google.zxing.Result decodeRow(int,com.google.zxing.common.BitArray,java.util.Hashtable) -> a
+    void reset() -> a
+com.google.zxing.oned.MultiFormatUPCEANReader -> com.a.a.c.j:
+    java.util.Vector readers -> a
+    com.google.zxing.Result decodeRow(int,com.google.zxing.common.BitArray,java.util.Hashtable) -> a
+    void reset() -> a
+com.google.zxing.oned.OneDReader -> com.a.a.c.k:
+    com.google.zxing.Result decode(com.google.zxing.BinaryBitmap,java.util.Hashtable) -> a
+    void reset() -> a
+    com.google.zxing.Result doDecode(com.google.zxing.BinaryBitmap,java.util.Hashtable) -> b
+    void recordPattern(com.google.zxing.common.BitArray,int,int[]) -> a
+    void recordPatternInReverse(com.google.zxing.common.BitArray,int,int[]) -> b
+    int patternMatchVariance(int[],int[],int) -> a
+    com.google.zxing.Result decodeRow(int,com.google.zxing.common.BitArray,java.util.Hashtable) -> a
+com.google.zxing.oned.UPCAReader -> com.a.a.c.l:
+    com.google.zxing.oned.UPCEANReader ean13Reader -> a
+    com.google.zxing.Result decodeRow(int,com.google.zxing.common.BitArray,int[],java.util.Hashtable) -> a
+    com.google.zxing.Result decodeRow(int,com.google.zxing.common.BitArray,java.util.Hashtable) -> a
+    com.google.zxing.Result decode(com.google.zxing.BinaryBitmap,java.util.Hashtable) -> a
+    com.google.zxing.BarcodeFormat getBarcodeFormat() -> b
+    int decodeMiddle(com.google.zxing.common.BitArray,int[],java.lang.StringBuffer) -> a
+    com.google.zxing.Result maybeReturnResult(com.google.zxing.Result) -> a
+com.google.zxing.oned.UPCEANExtensionSupport -> com.a.a.c.m:
+    int[] EXTENSION_START_PATTERN -> a
+    int[] CHECK_DIGIT_ENCODINGS -> b
+    int[] decodeMiddleCounters -> c
+    java.lang.StringBuffer decodeRowStringBuffer -> d
+    com.google.zxing.Result decodeRow(int,com.google.zxing.common.BitArray,int) -> a
+com.google.zxing.oned.UPCEANReader -> com.a.a.c.n:
+    int[] START_END_PATTERN -> b
+    int[] MIDDLE_PATTERN -> c
+    int[][] L_PATTERNS -> d
+    int[][] L_AND_G_PATTERNS -> e
+    java.lang.StringBuffer decodeRowStringBuffer -> a
+    com.google.zxing.oned.UPCEANExtensionSupport extensionReader -> f
+    com.google.zxing.oned.EANManufacturerOrgSupport eanManSupport -> g
+    int[] findStartGuardPattern(com.google.zxing.common.BitArray) -> a
+    com.google.zxing.Result decodeRow(int,com.google.zxing.common.BitArray,java.util.Hashtable) -> a
+    com.google.zxing.Result decodeRow(int,com.google.zxing.common.BitArray,int[],java.util.Hashtable) -> a
+    boolean checkChecksum(java.lang.String) -> a
+    int[] decodeEnd(com.google.zxing.common.BitArray,int) -> a
+    int[] findGuardPattern(com.google.zxing.common.BitArray,int,boolean,int[]) -> a
+    int decodeDigit(com.google.zxing.common.BitArray,int[],int,int[][]) -> a
+    com.google.zxing.BarcodeFormat getBarcodeFormat() -> b
+    int decodeMiddle(com.google.zxing.common.BitArray,int[],java.lang.StringBuffer) -> a
+com.google.zxing.oned.UPCEReader -> com.a.a.c.o:
+    int[] MIDDLE_END_PATTERN -> a
+    int[][] NUMSYS_AND_CHECK_DIGIT_PATTERNS -> f
+    int[] decodeMiddleCounters -> g
+    int decodeMiddle(com.google.zxing.common.BitArray,int[],java.lang.StringBuffer) -> a
+    int[] decodeEnd(com.google.zxing.common.BitArray,int) -> a
+    boolean checkChecksum(java.lang.String) -> a
+    com.google.zxing.BarcodeFormat getBarcodeFormat() -> b
+com.google.zxing.oned.rss.AbstractRSSReader -> com.a.a.c.a.a:
+    int[] decodeFinderCounters -> a
+    int[] dataCharacterCounters -> b
+    float[] oddRoundingErrors -> c
+    float[] evenRoundingErrors -> d
+    int[] oddCounts -> e
+    int[] evenCounts -> f
+    int parseFinderValue(int[],int[][]) -> a
+    int count(int[]) -> a
+    void increment(int[],float[]) -> a
+    void decrement(int[],float[]) -> b
+    boolean isFinderPattern(int[]) -> b
+com.google.zxing.oned.rss.DataCharacter -> com.a.a.c.a.b:
+    int value -> a
+    int checksumPortion -> b
+    int getValue() -> a
+    int getChecksumPortion() -> b
+com.google.zxing.oned.rss.FinderPattern -> com.a.a.c.a.c:
+    int value -> a
+    int[] startEnd -> b
+    com.google.zxing.ResultPoint[] resultPoints -> c
+    int getValue() -> a
+    int[] getStartEnd() -> b
+    com.google.zxing.ResultPoint[] getResultPoints() -> c
+com.google.zxing.oned.rss.Pair -> com.a.a.c.a.d:
+    com.google.zxing.oned.rss.FinderPattern finderPattern -> a
+    int count -> b
+    com.google.zxing.oned.rss.FinderPattern getFinderPattern() -> c
+    int getCount() -> d
+    void incrementCount() -> e
+com.google.zxing.oned.rss.RSS14Reader -> com.a.a.c.a.e:
+    int[] OUTSIDE_EVEN_TOTAL_SUBSET -> g
+    int[] INSIDE_ODD_TOTAL_SUBSET -> h
+    int[] OUTSIDE_GSUM -> i
+    int[] INSIDE_GSUM -> j
+    int[] OUTSIDE_ODD_WIDEST -> k
+    int[] INSIDE_ODD_WIDEST -> l
+    int[][] FINDER_PATTERNS -> m
+    java.util.Vector possibleLeftPairs -> n
+    java.util.Vector possibleRightPairs -> o
+    com.google.zxing.Result decodeRow(int,com.google.zxing.common.BitArray,java.util.Hashtable) -> a
+    void addOrTally(java.util.Vector,com.google.zxing.oned.rss.Pair) -> a
+    void reset() -> a
+    com.google.zxing.oned.rss.Pair decodePair(com.google.zxing.common.BitArray,boolean,int,java.util.Hashtable) -> a
+    com.google.zxing.oned.rss.DataCharacter decodeDataCharacter(com.google.zxing.common.BitArray,com.google.zxing.oned.rss.FinderPattern,boolean) -> a
+com.google.zxing.oned.rss.RSSUtils -> com.a.a.c.a.f:
+    int getRSSvalue(int[],int,boolean) -> a
+    int combins(int,int) -> a
+com.google.zxing.oned.rss.expanded.ExpandedPair -> com.a.a.c.a.a.a:
+    boolean mayBeLast -> a
+    com.google.zxing.oned.rss.DataCharacter leftChar -> b
+    com.google.zxing.oned.rss.DataCharacter rightChar -> c
+    com.google.zxing.oned.rss.FinderPattern finderPattern -> d
+    boolean mayBeLast() -> a
+    com.google.zxing.oned.rss.DataCharacter getLeftChar() -> b
+    com.google.zxing.oned.rss.DataCharacter getRightChar() -> c
+    com.google.zxing.oned.rss.FinderPattern getFinderPattern() -> d
+    boolean mustBeLast() -> e
+com.google.zxing.oned.rss.expanded.RSSExpandedReader -> com.a.a.c.a.a.b:
+    int[] SYMBOL_WIDEST -> g
+    int[] EVEN_TOTAL_SUBSET -> h
+    int[] GSUM -> i
+    int[][] FINDER_PATTERNS -> j
+    int[][] WEIGHTS -> k
+    int[][] FINDER_PATTERN_SEQUENCES -> l
+    int LONGEST_SEQUENCE_SIZE -> m
+    java.util.Vector pairs -> n
+    int[] startEnd -> o
+    int[] currentSequence -> p
+    com.google.zxing.Result decodeRow(int,com.google.zxing.common.BitArray,java.util.Hashtable) -> a
+    void reset() -> a
+    com.google.zxing.oned.rss.expanded.ExpandedPair retrieveNextPair(com.google.zxing.common.BitArray,java.util.Vector,int) -> a
+    void reverseCounters(int[]) -> c
+    com.google.zxing.oned.rss.FinderPattern parseFoundFinderPattern(com.google.zxing.common.BitArray,int,boolean) -> a
+    com.google.zxing.oned.rss.DataCharacter decodeDataCharacter(com.google.zxing.common.BitArray,com.google.zxing.oned.rss.FinderPattern,boolean,boolean) -> a
+    boolean isNotA1left(com.google.zxing.oned.rss.FinderPattern,boolean,boolean) -> a
+com.google.zxing.oned.rss.expanded.decoders.AI013103decoder -> com.a.a.c.a.a.a.a:
+    void addWeightCode(java.lang.StringBuffer,int) -> a
+    int checkWeight(int) -> a
+com.google.zxing.oned.rss.expanded.decoders.AI01320xDecoder -> com.a.a.c.a.a.a.b:
+    void addWeightCode(java.lang.StringBuffer,int) -> a
+    int checkWeight(int) -> a
+com.google.zxing.oned.rss.expanded.decoders.AI01392xDecoder -> com.a.a.c.a.a.a.c:
+    java.lang.String parseInformation() -> a
+com.google.zxing.oned.rss.expanded.decoders.AI01393xDecoder -> com.a.a.c.a.a.a.d:
+    java.lang.String parseInformation() -> a
+com.google.zxing.oned.rss.expanded.decoders.AI013x0x1xDecoder -> com.a.a.c.a.a.a.e:
+    java.lang.String dateCode -> c
+    java.lang.String firstAIdigits -> d
+    java.lang.String parseInformation() -> a
+    void addWeightCode(java.lang.StringBuffer,int) -> a
+    int checkWeight(int) -> a
+com.google.zxing.oned.rss.expanded.decoders.AI013x0xDecoder -> com.a.a.c.a.a.a.f:
+    java.lang.String parseInformation() -> a
+com.google.zxing.oned.rss.expanded.decoders.AI01AndOtherAIs -> com.a.a.c.a.a.a.g:
+    java.lang.String parseInformation() -> a
+com.google.zxing.oned.rss.expanded.decoders.AI01decoder -> com.a.a.c.a.a.a.h:
+    void encodeCompressedGtin(java.lang.StringBuffer,int) -> b
+    void encodeCompressedGtinWithoutAI(java.lang.StringBuffer,int,int) -> a
+com.google.zxing.oned.rss.expanded.decoders.AI01weightDecoder -> com.a.a.c.a.a.a.i:
+    void encodeCompressedWeight(java.lang.StringBuffer,int,int) -> b
+    void addWeightCode(java.lang.StringBuffer,int) -> a
+    int checkWeight(int) -> a
+com.google.zxing.oned.rss.expanded.decoders.AbstractExpandedDecoder -> com.a.a.c.a.a.a.j:
+    com.google.zxing.common.BitArray information -> a
+    com.google.zxing.oned.rss.expanded.decoders.GeneralAppIdDecoder generalDecoder -> b
+    java.lang.String parseInformation() -> a
+    com.google.zxing.oned.rss.expanded.decoders.AbstractExpandedDecoder createDecoder(com.google.zxing.common.BitArray) -> a
+com.google.zxing.oned.rss.expanded.decoders.AnyAIDecoder -> com.a.a.c.a.a.a.k:
+    java.lang.String parseInformation() -> a
+com.google.zxing.oned.rss.expanded.decoders.BlockParsedResult -> com.a.a.c.a.a.a.l:
+    com.google.zxing.oned.rss.expanded.decoders.DecodedInformation decodedInformation -> a
+    boolean finished -> b
+    com.google.zxing.oned.rss.expanded.decoders.DecodedInformation getDecodedInformation() -> a
+    boolean isFinished() -> b
+com.google.zxing.oned.rss.expanded.decoders.CurrentParsingState -> com.a.a.c.a.a.a.m:
+    int position -> a
+    int encoding -> b
+    boolean isAlpha() -> a
+    boolean isIsoIec646() -> b
+    void setNumeric() -> c
+    void setAlpha() -> d
+    void setIsoIec646() -> e
+com.google.zxing.oned.rss.expanded.decoders.DecodedChar -> com.a.a.c.a.a.a.n:
+    char value -> b
+    char getValue() -> a
+    boolean isFNC1() -> b
+com.google.zxing.oned.rss.expanded.decoders.DecodedInformation -> com.a.a.c.a.a.a.o:
+    java.lang.String newString -> b
+    int remainingValue -> c
+    boolean remaining -> d
+    java.lang.String getNewString() -> a
+    boolean isRemaining() -> b
+    int getRemainingValue() -> c
+com.google.zxing.oned.rss.expanded.decoders.DecodedNumeric -> com.a.a.c.a.a.a.p:
+    int firstDigit -> b
+    int secondDigit -> c
+    int getFirstDigit() -> a
+    int getSecondDigit() -> b
+    boolean isFirstDigitFNC1() -> c
+    boolean isSecondDigitFNC1() -> d
+com.google.zxing.oned.rss.expanded.decoders.DecodedObject -> com.a.a.c.a.a.a.q:
+    int newPosition -> a
+    int getNewPosition() -> e
+com.google.zxing.oned.rss.expanded.decoders.FieldParser -> com.a.a.c.a.a.a.r:
+    java.lang.Object VARIABLE_LENGTH -> a
+    java.lang.Object[][] TWO_DIGIT_DATA_LENGTH -> b
+    java.lang.Object[][] THREE_DIGIT_DATA_LENGTH -> c
+    java.lang.Object[][] THREE_DIGIT_PLUS_DIGIT_DATA_LENGTH -> d
+    java.lang.Object[][] FOUR_DIGIT_DATA_LENGTH -> e
+    java.lang.String parseFieldsInGeneralPurpose(java.lang.String) -> a
+    java.lang.String processFixedAI(int,int,java.lang.String) -> a
+    java.lang.String processVariableAI(int,int,java.lang.String) -> b
+com.google.zxing.oned.rss.expanded.decoders.GeneralAppIdDecoder -> com.a.a.c.a.a.a.s:
+    com.google.zxing.common.BitArray information -> a
+    com.google.zxing.oned.rss.expanded.decoders.CurrentParsingState current -> b
+    java.lang.StringBuffer buffer -> c
+    java.lang.String decodeAllCodes(java.lang.StringBuffer,int) -> a
+    int extractNumericValueFromBitArray(int,int) -> a
+    int extractNumericValueFromBitArray(com.google.zxing.common.BitArray,int,int) -> a
+    com.google.zxing.oned.rss.expanded.decoders.DecodedInformation decodeGeneralPurposeField(int,java.lang.String) -> a
+    com.google.zxing.oned.rss.expanded.decoders.BlockParsedResult parseNumericBlock() -> a
+    com.google.zxing.oned.rss.expanded.decoders.BlockParsedResult parseIsoIec646Block() -> b
+    boolean isAlphaTo646ToAlphaLatch(int) -> a
+    boolean isAlphaOr646ToNumericLatch(int) -> b
+com.google.zxing.pdf417.PDF417Reader -> com.a.a.d.a:
+    com.google.zxing.ResultPoint[] NO_POINTS -> a
+    com.google.zxing.pdf417.decoder.Decoder decoder -> b
+    com.google.zxing.Result decode(com.google.zxing.BinaryBitmap,java.util.Hashtable) -> a
+    void reset() -> a
+com.google.zxing.pdf417.decoder.BitMatrixParser -> com.a.a.d.a.a:
+    com.google.zxing.common.BitMatrix bitMatrix -> a
+    int rows -> b
+    int leftColumnECData -> c
+    int rightColumnECData -> d
+    int eraseCount -> e
+    int[] erasures -> f
+    int ecLevel -> g
+    int[] SYMBOL_TABLE -> h
+    int[] CODEWORD_TABLE -> i
+    int[] readCodewords() -> a
+    int[] trimArray(int[],int) -> a
+    int processRow(int[],int,int,int[],int) -> a
+    int getCodeword(long) -> a
+    int[] getErasures() -> b
+    int getECLevel() -> c
+com.google.zxing.pdf417.decoder.DecodedBitStreamParser -> com.a.a.d.a.b:
+    char[] PUNCT_CHARS -> a
+    char[] MIXED_CHARS -> b
+    java.lang.String[] EXP900 -> c
+    com.google.zxing.common.DecoderResult decode(int[]) -> a
+    int textCompaction(int[],int,java.lang.StringBuffer) -> a
+    int byteCompaction(int,int[],int,java.lang.StringBuffer) -> a
+    int numericCompaction(int[],int,java.lang.StringBuffer) -> b
+    java.lang.StringBuffer add(java.lang.String,java.lang.String) -> a
+com.google.zxing.pdf417.decoder.Decoder -> com.a.a.d.a.c:
+    com.google.zxing.common.DecoderResult decode(com.google.zxing.common.BitMatrix) -> a
+com.google.zxing.pdf417.detector.Detector -> com.a.a.d.b.a:
+    int[] START_PATTERN -> a
+    int[] START_PATTERN_REVERSE -> b
+    int[] STOP_PATTERN -> c
+    int[] STOP_PATTERN_REVERSE -> d
+    com.google.zxing.BinaryBitmap image -> e
+    com.google.zxing.common.DetectorResult detect() -> a
+    void correctCodeWordVertices(com.google.zxing.ResultPoint[],boolean) -> a
+    int[] findGuardPattern(com.google.zxing.common.BitMatrix,int,int,int,boolean,int[]) -> a
+com.google.zxing.qrcode.QRCodeReader -> com.a.a.e.a:
+    com.google.zxing.ResultPoint[] NO_POINTS -> a
+    com.google.zxing.qrcode.decoder.Decoder decoder -> b
+    com.google.zxing.Result decode(com.google.zxing.BinaryBitmap,java.util.Hashtable) -> a
+    void reset() -> a
+    com.google.zxing.common.BitMatrix extractPureBits(com.google.zxing.common.BitMatrix) -> a
+com.google.zxing.qrcode.decoder.BitMatrixParser -> com.a.a.e.a.a:
+    com.google.zxing.common.BitMatrix bitMatrix -> a
+    com.google.zxing.qrcode.decoder.Version parsedVersion -> b
+    com.google.zxing.qrcode.decoder.FormatInformation parsedFormatInfo -> c
+    com.google.zxing.qrcode.decoder.FormatInformation readFormatInformation() -> a
+    com.google.zxing.qrcode.decoder.Version readVersion() -> b
+    int copyBit(int,int,int) -> a
+    byte[] readCodewords() -> c
+com.google.zxing.qrcode.decoder.DataBlock -> com.a.a.e.a.b:
+    int numDataCodewords -> a
+    byte[] codewords -> b
+    com.google.zxing.qrcode.decoder.DataBlock[] getDataBlocks(byte[],com.google.zxing.qrcode.decoder.Version,com.google.zxing.qrcode.decoder.ErrorCorrectionLevel) -> a
+    int getNumDataCodewords() -> a
+    byte[] getCodewords() -> b
+com.google.zxing.qrcode.decoder.DataMask -> com.a.a.e.a.c:
+    com.google.zxing.qrcode.decoder.DataMask[] DATA_MASKS -> a
+    void unmaskBitMatrix(com.google.zxing.common.BitMatrix,int) -> a
+    boolean isMasked(int,int) -> a
+    com.google.zxing.qrcode.decoder.DataMask forReference(int) -> a
+com.google.zxing.qrcode.decoder.DataMask$DataMask000 -> com.a.a.e.a.d:
+    boolean isMasked(int,int) -> a
+com.google.zxing.qrcode.decoder.DataMask$DataMask001 -> com.a.a.e.a.e:
+    boolean isMasked(int,int) -> a
+com.google.zxing.qrcode.decoder.DataMask$DataMask010 -> com.a.a.e.a.f:
+    boolean isMasked(int,int) -> a
+com.google.zxing.qrcode.decoder.DataMask$DataMask011 -> com.a.a.e.a.g:
+    boolean isMasked(int,int) -> a
+com.google.zxing.qrcode.decoder.DataMask$DataMask100 -> com.a.a.e.a.h:
+    boolean isMasked(int,int) -> a
+com.google.zxing.qrcode.decoder.DataMask$DataMask101 -> com.a.a.e.a.i:
+    boolean isMasked(int,int) -> a
+com.google.zxing.qrcode.decoder.DataMask$DataMask110 -> com.a.a.e.a.j:
+    boolean isMasked(int,int) -> a
+com.google.zxing.qrcode.decoder.DataMask$DataMask111 -> com.a.a.e.a.k:
+    boolean isMasked(int,int) -> a
+com.google.zxing.qrcode.decoder.DecodedBitStreamParser -> com.a.a.e.a.l:
+    char[] ALPHANUMERIC_CHARS -> a
+    com.google.zxing.common.DecoderResult decode(byte[],com.google.zxing.qrcode.decoder.Version,com.google.zxing.qrcode.decoder.ErrorCorrectionLevel,java.util.Hashtable) -> a
+    void decodeKanjiSegment(com.google.zxing.common.BitSource,java.lang.StringBuffer,int) -> a
+    void decodeByteSegment(com.google.zxing.common.BitSource,java.lang.StringBuffer,int,com.google.zxing.common.CharacterSetECI,java.util.Vector,java.util.Hashtable) -> a
+    char toAlphaNumericChar(int) -> a
+    void decodeAlphanumericSegment(com.google.zxing.common.BitSource,java.lang.StringBuffer,int,boolean) -> a
+    void decodeNumericSegment(com.google.zxing.common.BitSource,java.lang.StringBuffer,int) -> b
+com.google.zxing.qrcode.decoder.Decoder -> com.a.a.e.a.m:
+    com.google.zxing.common.reedsolomon.ReedSolomonDecoder rsDecoder -> a
+    com.google.zxing.common.DecoderResult decode(com.google.zxing.common.BitMatrix,java.util.Hashtable) -> a
+com.google.zxing.qrcode.decoder.ErrorCorrectionLevel -> com.a.a.e.a.n:
+    com.google.zxing.qrcode.decoder.ErrorCorrectionLevel L -> a
+    com.google.zxing.qrcode.decoder.ErrorCorrectionLevel M -> b
+    com.google.zxing.qrcode.decoder.ErrorCorrectionLevel Q -> c
+    com.google.zxing.qrcode.decoder.ErrorCorrectionLevel H -> d
+    com.google.zxing.qrcode.decoder.ErrorCorrectionLevel[] FOR_BITS -> e
+    int ordinal -> f
+    int bits -> g
+    java.lang.String name -> h
+    int ordinal() -> a
+    java.lang.String toString() -> toString
+    com.google.zxing.qrcode.decoder.ErrorCorrectionLevel forBits(int) -> a
+com.google.zxing.qrcode.decoder.FormatInformation -> com.a.a.e.a.o:
+    int[][] FORMAT_INFO_DECODE_LOOKUP -> a
+    int[] BITS_SET_IN_HALF_BYTE -> b
+    com.google.zxing.qrcode.decoder.ErrorCorrectionLevel errorCorrectionLevel -> c
+    byte dataMask -> d
+    int numBitsDiffering(int,int) -> a
+    com.google.zxing.qrcode.decoder.FormatInformation decodeFormatInformation(int,int) -> b
+    com.google.zxing.qrcode.decoder.FormatInformation doDecodeFormatInformation(int,int) -> c
+    com.google.zxing.qrcode.decoder.ErrorCorrectionLevel getErrorCorrectionLevel() -> a
+    byte getDataMask() -> b
+    int hashCode() -> hashCode
+    boolean equals(java.lang.Object) -> equals
+com.google.zxing.qrcode.decoder.Mode -> com.a.a.e.a.p:
+    com.google.zxing.qrcode.decoder.Mode TERMINATOR -> a
+    com.google.zxing.qrcode.decoder.Mode NUMERIC -> b
+    com.google.zxing.qrcode.decoder.Mode ALPHANUMERIC -> c
+    com.google.zxing.qrcode.decoder.Mode STRUCTURED_APPEND -> d
+    com.google.zxing.qrcode.decoder.Mode BYTE -> e
+    com.google.zxing.qrcode.decoder.Mode ECI -> f
+    com.google.zxing.qrcode.decoder.Mode KANJI -> g
+    com.google.zxing.qrcode.decoder.Mode FNC1_FIRST_POSITION -> h
+    com.google.zxing.qrcode.decoder.Mode FNC1_SECOND_POSITION -> i
+    int[] characterCountBitsForVersions -> j
+    int bits -> k
+    java.lang.String name -> l
+    com.google.zxing.qrcode.decoder.Mode forBits(int) -> a
+    int getCharacterCountBits(com.google.zxing.qrcode.decoder.Version) -> a
+    java.lang.String toString() -> toString
+com.google.zxing.qrcode.decoder.Version -> com.a.a.e.a.q:
+    int[] VERSION_DECODE_INFO -> a
+    com.google.zxing.qrcode.decoder.Version[] VERSIONS -> b
+    int versionNumber -> c
+    int[] alignmentPatternCenters -> d
+    com.google.zxing.qrcode.decoder.Version$ECBlocks[] ecBlocks -> e
+    int totalCodewords -> f
+    int getVersionNumber() -> a
+    int[] getAlignmentPatternCenters() -> b
+    int getTotalCodewords() -> c
+    int getDimensionForVersion() -> d
+    com.google.zxing.qrcode.decoder.Version$ECBlocks getECBlocksForLevel(com.google.zxing.qrcode.decoder.ErrorCorrectionLevel) -> a
+    com.google.zxing.qrcode.decoder.Version getProvisionalVersionForDimension(int) -> a
+    com.google.zxing.qrcode.decoder.Version getVersionForNumber(int) -> b
+    com.google.zxing.qrcode.decoder.Version decodeVersionInformation(int) -> c
+    com.google.zxing.common.BitMatrix buildFunctionPattern() -> e
+    java.lang.String toString() -> toString
+com.google.zxing.qrcode.decoder.Version$ECB -> com.a.a.e.a.r:
+    int count -> a
+    int dataCodewords -> b
+    int getCount() -> a
+    int getDataCodewords() -> b
+com.google.zxing.qrcode.decoder.Version$ECBlocks -> com.a.a.e.a.s:
+    int ecCodewordsPerBlock -> a
+    com.google.zxing.qrcode.decoder.Version$ECB[] ecBlocks -> b
+    int getECCodewordsPerBlock() -> a
+    com.google.zxing.qrcode.decoder.Version$ECB[] getECBlocks() -> b
+com.google.zxing.qrcode.detector.AlignmentPattern -> com.a.a.e.b.a:
+    float estimatedModuleSize -> a
+    boolean aboutEquals(float,float,float) -> a
+com.google.zxing.qrcode.detector.AlignmentPatternFinder -> com.a.a.e.b.b:
+    com.google.zxing.common.BitMatrix image -> a
+    java.util.Vector possibleCenters -> b
+    int startX -> c
+    int startY -> d
+    int width -> e
+    int height -> f
+    float moduleSize -> g
+    int[] crossCheckStateCount -> h
+    com.google.zxing.ResultPointCallback resultPointCallback -> i
+    com.google.zxing.qrcode.detector.AlignmentPattern find() -> a
+    float centerFromEnd(int[],int) -> a
+    boolean foundPatternCross(int[]) -> a
+    com.google.zxing.qrcode.detector.AlignmentPattern handlePossibleCenter(int[],int,int) -> a
+com.google.zxing.qrcode.detector.Detector -> com.a.a.e.b.c:
+    com.google.zxing.common.BitMatrix image -> a
+    com.google.zxing.ResultPointCallback resultPointCallback -> b
+    com.google.zxing.common.DetectorResult detect(java.util.Hashtable) -> a
+    com.google.zxing.common.DetectorResult processFinderPatternInfo(com.google.zxing.qrcode.detector.FinderPatternInfo) -> a
+    float calculateModuleSizeOneWay(com.google.zxing.ResultPoint,com.google.zxing.ResultPoint) -> a
+    float sizeOfBlackWhiteBlackRunBothWays(int,int,int,int) -> a
+    float sizeOfBlackWhiteBlackRun(int,int,int,int) -> b
+com.google.zxing.qrcode.detector.FinderPattern -> com.a.a.e.b.d:
+    float estimatedModuleSize -> a
+    int count -> b
+    float getEstimatedModuleSize() -> c
+    int getCount() -> d
+    void incrementCount() -> e
+    boolean aboutEquals(float,float,float) -> a
+com.google.zxing.qrcode.detector.FinderPatternFinder -> com.a.a.e.b.e:
+    com.google.zxing.common.BitMatrix image -> a
+    java.util.Vector possibleCenters -> b
+    boolean hasSkipped -> c
+    int[] crossCheckStateCount -> d
+    com.google.zxing.ResultPointCallback resultPointCallback -> e
+    com.google.zxing.qrcode.detector.FinderPatternInfo find(java.util.Hashtable) -> a
+    float centerFromEnd(int[],int) -> a
+    boolean foundPatternCross(int[]) -> a
+    int[] getCrossCheckStateCount() -> a
+    boolean handlePossibleCenter(int[],int,int) -> a
+    boolean haveMultiplyConfirmedCenters() -> b
+com.google.zxing.qrcode.detector.FinderPatternFinder$CenterComparator -> com.a.a.e.b.f:
+    float average -> a
+    int compare(java.lang.Object,java.lang.Object) -> a
+com.google.zxing.qrcode.detector.FinderPatternFinder$FurthestFromAverageComparator -> com.a.a.e.b.g:
+    float average -> a
+    int compare(java.lang.Object,java.lang.Object) -> a
+com.google.zxing.qrcode.detector.FinderPatternInfo -> com.a.a.e.b.h:
+    com.google.zxing.qrcode.detector.FinderPattern bottomLeft -> a
+    com.google.zxing.qrcode.detector.FinderPattern topLeft -> b
+    com.google.zxing.qrcode.detector.FinderPattern topRight -> c
+    com.google.zxing.qrcode.detector.FinderPattern getBottomLeft() -> a
+    com.google.zxing.qrcode.detector.FinderPattern getTopLeft() -> b
+    com.google.zxing.qrcode.detector.FinderPattern getTopRight() -> c
+com.heima.vdun.AboutActivity -> com.heima.vdun.AboutActivity:
+    android.widget.TextView tvVersion -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+com.heima.vdun.AccountInfoActivity -> com.heima.vdun.AccountInfoActivity:
+    android.widget.ImageView ivIcon -> a
+    android.widget.TextView tvAccount -> b
+    android.widget.Button btUnbind -> c
+    com.heima.vdun.global.App app -> d
+    com.heima.vdun.entity.AccountBean info -> f
+    com.heima.vdun.util.ImageDownloader downloader -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+    com.heima.vdun.entity.AccountBean access$0(com.heima.vdun.AccountInfoActivity) -> a
+com.heima.vdun.AccountInfoActivity$1 -> com.heima.vdun.a:
+    com.heima.vdun.AccountInfoActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.heima.vdun.AccountListActivity -> com.heima.vdun.AccountListActivity:
+    com.heima.vdun.global.App app -> b
+    android.widget.Button btSkip -> c
+    android.widget.ListView lvList -> d
+    android.widget.TextView tvInfo -> e
+    android.widget.ProgressBar pb -> f
+    android.view.LayoutInflater inflater -> a
+    java.util.List list -> g
+    android.os.Handler handler -> h
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onClick(android.view.View) -> onClick
+    android.widget.ProgressBar access$0(com.heima.vdun.AccountListActivity) -> a
+    java.util.List access$1(com.heima.vdun.AccountListActivity) -> b
+    android.widget.TextView access$2(com.heima.vdun.AccountListActivity) -> c
+    android.widget.ListView access$3(com.heima.vdun.AccountListActivity) -> d
+    void access$4(com.heima.vdun.AccountListActivity) -> e
+    com.heima.vdun.global.App access$5(com.heima.vdun.AccountListActivity) -> f
+    android.os.Handler access$6(com.heima.vdun.AccountListActivity) -> g
+    void access$7(com.heima.vdun.AccountListActivity,java.util.List) -> a
+    boolean access$8(com.heima.vdun.AccountListActivity) -> h
+com.heima.vdun.AccountListActivity$1 -> com.heima.vdun.b:
+    com.heima.vdun.AccountListActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.heima.vdun.AccountListActivity$2 -> com.heima.vdun.c:
+    com.heima.vdun.AccountListActivity this$0 -> a
+    void run() -> run
+com.heima.vdun.AccountListActivity$3 -> com.heima.vdun.d:
+    com.heima.vdun.AccountListActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.heima.vdun.AccountListActivity$4 -> com.heima.vdun.e:
+    com.heima.vdun.AccountListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+    com.heima.vdun.AccountListActivity access$0(com.heima.vdun.AccountListActivity$4) -> a
+com.heima.vdun.AccountListActivity$4$1 -> com.heima.vdun.f:
+    com.heima.vdun.AccountListActivity$4 this$1 -> a
+    void run() -> run
+com.heima.vdun.AccountListActivity$5 -> com.heima.vdun.g:
+    com.heima.vdun.AccountListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.AccountListActivity$6 -> com.heima.vdun.h:
+    com.heima.vdun.AccountListActivity this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+com.heima.vdun.AddAccountActivity -> com.heima.vdun.AddAccountActivity:
+    com.heima.vdun.global.App app -> a
+    android.widget.ListView lvList -> b
+    android.widget.ProgressBar pb -> c
+    java.util.List list -> d
+    android.os.Handler handler -> e
+    com.heima.vdun.entity.TokenInfo tokenInfo -> f
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+    android.widget.ProgressBar access$0(com.heima.vdun.AddAccountActivity) -> a
+    android.widget.ListView access$1(com.heima.vdun.AddAccountActivity) -> b
+    java.util.List access$2(com.heima.vdun.AddAccountActivity) -> c
+    void access$3(com.heima.vdun.AddAccountActivity) -> d
+    void access$4(com.heima.vdun.AddAccountActivity,com.heima.vdun.entity.TokenInfo) -> a
+    com.heima.vdun.global.App access$5(com.heima.vdun.AddAccountActivity) -> e
+    com.heima.vdun.entity.TokenInfo access$6(com.heima.vdun.AddAccountActivity) -> f
+    android.os.Handler access$7(com.heima.vdun.AddAccountActivity) -> g
+    void access$8(com.heima.vdun.AddAccountActivity,java.util.List) -> a
+    boolean access$9(com.heima.vdun.AddAccountActivity) -> h
+com.heima.vdun.AddAccountActivity$1 -> com.heima.vdun.i:
+    com.heima.vdun.AddAccountActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.heima.vdun.AddAccountActivity$2 -> com.heima.vdun.j:
+    com.heima.vdun.AddAccountActivity this$0 -> a
+    void run() -> run
+com.heima.vdun.AddAccountActivity$3 -> com.heima.vdun.k:
+    com.heima.vdun.AddAccountActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.heima.vdun.AddAccountActivity$4 -> com.heima.vdun.l:
+    com.heima.vdun.AddAccountActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+    com.heima.vdun.AddAccountActivity access$0(com.heima.vdun.AddAccountActivity$4) -> a
+com.heima.vdun.AddAccountActivity$4$1 -> com.heima.vdun.m:
+    com.heima.vdun.AddAccountActivity$4 this$1 -> a
+    void run() -> run
+com.heima.vdun.AddAccountActivity$5 -> com.heima.vdun.n:
+    com.heima.vdun.AddAccountActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.AddAccountActivity$6 -> com.heima.vdun.o:
+    com.heima.vdun.AddAccountActivity this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+com.heima.vdun.BindActivity -> com.heima.vdun.BindActivity:
+    android.widget.EditText etAccount -> a
+    android.widget.Button btBind -> b
+    android.app.ProgressDialog dialog -> c
+    android.widget.TextView tvAccountInfo -> d
+    java.util.Timer timer -> e
+    android.os.Handler handler -> f
+    com.heima.vdun.entity.TokenInfo info -> g
+    com.heima.vdun.global.App app -> h
+    com.heima.vdun.entity.BindResult response -> i
+    boolean fromInitPage -> j
+    java.lang.String account -> k
+    java.lang.String accountID -> l
+    java.lang.String sn -> m
+    java.lang.String sms -> n
+    java.lang.String SENT_SMS_ACTION -> o
+    java.lang.String DELIVERED_SMS_ACTION -> p
+    android.content.BroadcastReceiver sendMessage -> q
+    android.content.BroadcastReceiver receiver -> r
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void startBind() -> a
+    boolean checkNet() -> b
+    void showNetErrorDialog() -> c
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onDestroy() -> onDestroy
+    void access$0(com.heima.vdun.BindActivity) -> a
+    java.lang.String access$1(com.heima.vdun.BindActivity) -> b
+    com.heima.vdun.entity.BindResult access$2(com.heima.vdun.BindActivity) -> c
+    void access$3(com.heima.vdun.BindActivity,com.heima.vdun.entity.BindResult) -> a
+    void access$4(com.heima.vdun.BindActivity,com.heima.vdun.entity.BindResult) -> b
+    void access$5(com.heima.vdun.BindActivity) -> d
+    void access$6(com.heima.vdun.BindActivity) -> e
+    java.lang.String access$7(com.heima.vdun.BindActivity) -> f
+    java.lang.String access$8(com.heima.vdun.BindActivity) -> g
+    void access$9(com.heima.vdun.BindActivity,java.lang.String) -> a
+    void access$10(com.heima.vdun.BindActivity,java.lang.String) -> b
+    java.lang.String access$11(com.heima.vdun.BindActivity) -> h
+    java.lang.String access$12(com.heima.vdun.BindActivity) -> i
+    java.lang.String access$13(com.heima.vdun.BindActivity) -> j
+    void access$14(com.heima.vdun.BindActivity,com.heima.vdun.entity.BindResult) -> c
+    boolean access$15(com.heima.vdun.BindActivity) -> k
+    void access$16(com.heima.vdun.BindActivity) -> l
+com.heima.vdun.BindActivity$1 -> com.heima.vdun.p:
+    com.heima.vdun.BindActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.heima.vdun.BindActivity$10 -> com.heima.vdun.q:
+    com.heima.vdun.BindActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.BindActivity$2 -> com.heima.vdun.r:
+    com.heima.vdun.BindActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.heima.vdun.BindActivity$3 -> com.heima.vdun.s:
+    android.content.Intent i -> a
+    com.heima.vdun.BindActivity this$0 -> b
+    void handleMessage(android.os.Message) -> handleMessage
+com.heima.vdun.BindActivity$4 -> com.heima.vdun.t:
+    com.heima.vdun.BindActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.BindActivity$5 -> com.heima.vdun.u:
+    com.heima.vdun.BindActivity this$0 -> a
+    void run() -> run
+com.heima.vdun.BindActivity$6 -> com.heima.vdun.v:
+    com.heima.vdun.BindActivity this$0 -> a
+    void run() -> run
+com.heima.vdun.BindActivity$7 -> com.heima.vdun.w:
+    com.heima.vdun.BindActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.BindActivity$8 -> com.heima.vdun.x:
+    com.heima.vdun.BindActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.BindActivity$9 -> com.heima.vdun.y:
+    com.heima.vdun.BindActivity this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+com.heima.vdun.BindActivity$CheckResponseTask -> com.heima.vdun.z:
+    int i -> a
+    com.heima.vdun.BindActivity this$0 -> b
+    void run() -> run
+com.heima.vdun.BindSucceedActivity -> com.heima.vdun.BindSucceedActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+com.heima.vdun.BindSucceedActivity$1 -> com.heima.vdun.aa:
+    com.heima.vdun.BindSucceedActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.heima.vdun.CaptureActivity -> com.heima.vdun.CaptureActivity:
+    com.heima.vdun.decoding.CaptureActivityHandler handler -> a
+    com.heima.vdun.view.ViewfinderView viewfinderView -> b
+    boolean hasSurface -> c
+    java.util.Vector decodeFormats -> d
+    java.lang.String characterSet -> e
+    com.heima.vdun.decoding.InactivityTimer inactivityTimer -> f
+    android.media.MediaPlayer mediaPlayer -> g
+    boolean playBeep -> h
+    boolean vibrate -> i
+    android.app.ProgressDialog dialog -> j
+    android.os.Handler mHandler -> k
+    android.media.MediaPlayer$OnCompletionListener beepListener -> l
+    boolean tag -> m
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onDestroy() -> onDestroy
+    void initCamera(android.view.SurfaceHolder) -> a
+    void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+    com.heima.vdun.view.ViewfinderView getViewfinderView() -> a
+    android.os.Handler getHandler() -> b
+    void drawViewfinder() -> c
+    void handleDecode(com.google.zxing.Result,android.graphics.Bitmap) -> a
+    android.os.Handler access$0(com.heima.vdun.CaptureActivity) -> a
+    void access$1$5094566(com.heima.vdun.CaptureActivity) -> b
+    android.app.ProgressDialog access$2(com.heima.vdun.CaptureActivity) -> c
+    boolean access$3(com.heima.vdun.CaptureActivity) -> d
+com.heima.vdun.CaptureActivity$1 -> com.heima.vdun.ab:
+    com.heima.vdun.CaptureActivity this$0 -> a
+    void onCompletion(android.media.MediaPlayer) -> onCompletion
+com.heima.vdun.CaptureActivity$2 -> com.heima.vdun.ac:
+    com.heima.vdun.CaptureActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+    com.heima.vdun.CaptureActivity access$0(com.heima.vdun.CaptureActivity$2) -> a
+com.heima.vdun.CaptureActivity$2$1 -> com.heima.vdun.ad:
+    com.heima.vdun.CaptureActivity$2 this$1 -> a
+    void run() -> run
+com.heima.vdun.CaptureActivity$3 -> com.heima.vdun.ae:
+    com.heima.vdun.CaptureActivity this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+com.heima.vdun.CaptureActivity$4 -> com.heima.vdun.af:
+    com.heima.vdun.CaptureActivity this$0 -> a
+    java.lang.String val$data -> b
+    void run() -> run
+com.heima.vdun.HelpActivity -> com.heima.vdun.HelpActivity:
+    android.webkit.WebView help_webview -> a
+    android.widget.ProgressBar help_pb -> b
+    java.lang.String help_url -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    android.widget.ProgressBar access$0(com.heima.vdun.HelpActivity) -> a
+com.heima.vdun.HelpActivity$MyWebViewClient -> com.heima.vdun.ag:
+    com.heima.vdun.HelpActivity this$0 -> a
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+com.heima.vdun.InitActivity -> com.heima.vdun.InitActivity:
+    com.heima.vdun.global.App app -> a
+    android.widget.Button btSms -> b
+    android.widget.Button btWeb -> c
+    android.app.ProgressDialog dialog -> d
+    java.util.Timer timer -> e
+    android.os.Handler handler -> f
+    com.heima.vdun.entity.TokenInfo info -> g
+    java.lang.String sn -> h
+    java.lang.String sms -> i
+    java.lang.String SENT_SMS_ACTION -> j
+    java.lang.String DELIVERED_SMS_ACTION -> k
+    android.content.BroadcastReceiver sendMessage -> l
+    android.content.BroadcastReceiver receiver -> m
+    boolean tag -> n
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onClick(android.view.View) -> onClick
+    boolean checkNet() -> a
+    void showNetErrorDialog() -> b
+    void showBindDialog() -> c
+    void onDestroy() -> onDestroy
+    void access$0(com.heima.vdun.InitActivity) -> a
+    boolean access$1(com.heima.vdun.InitActivity) -> b
+    java.lang.String access$2(com.heima.vdun.InitActivity) -> c
+    boolean access$3(com.heima.vdun.InitActivity) -> d
+    void access$4(com.heima.vdun.InitActivity) -> e
+    void access$5(com.heima.vdun.InitActivity) -> f
+    void access$6$3d5190d2(com.heima.vdun.InitActivity) -> g
+    java.lang.String access$7(com.heima.vdun.InitActivity) -> h
+    java.lang.String access$8(com.heima.vdun.InitActivity) -> i
+    void access$9(com.heima.vdun.InitActivity,java.lang.String) -> a
+    void access$10(com.heima.vdun.InitActivity,java.lang.String) -> b
+    java.lang.String access$11(com.heima.vdun.InitActivity) -> j
+    void access$12(com.heima.vdun.InitActivity) -> k
+com.heima.vdun.InitActivity$1 -> com.heima.vdun.ah:
+    com.heima.vdun.InitActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.heima.vdun.InitActivity$10 -> com.heima.vdun.ai:
+    com.heima.vdun.InitActivity this$0 -> a
+    void run() -> run
+com.heima.vdun.InitActivity$11 -> com.heima.vdun.aj:
+    com.heima.vdun.InitActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.InitActivity$2 -> com.heima.vdun.ak:
+    com.heima.vdun.InitActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.heima.vdun.InitActivity$3 -> com.heima.vdun.al:
+    com.heima.vdun.InitActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.heima.vdun.InitActivity$4 -> com.heima.vdun.am:
+    com.heima.vdun.InitActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.InitActivity$5 -> com.heima.vdun.an:
+    com.heima.vdun.InitActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.InitActivity$6 -> com.heima.vdun.ao:
+    com.heima.vdun.InitActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.InitActivity$7 -> com.heima.vdun.ap:
+    com.heima.vdun.InitActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.InitActivity$8 -> com.heima.vdun.aq:
+    com.heima.vdun.InitActivity this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+com.heima.vdun.InitActivity$9 -> com.heima.vdun.ar:
+    com.heima.vdun.InitActivity this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+com.heima.vdun.InitActivity$CheckResponseTask -> com.heima.vdun.as:
+    int i -> a
+    com.heima.vdun.InitActivity this$0 -> b
+    void run() -> run
+com.heima.vdun.PasscodePageActivity -> com.heima.vdun.PasscodePageActivity:
+    android.widget.ImageView ivBit1 -> a
+    android.widget.ImageView ivBit2 -> b
+    android.widget.ImageView ivBit3 -> c
+    android.widget.ImageView ivBit4 -> d
+    android.widget.ImageView ivBit5 -> e
+    android.widget.ImageView ivBit6 -> f
+    android.widget.TextView tvPasscodeTime -> g
+    android.widget.TextView tvPasscodeDate -> h
+    android.widget.TextView tvCardNumber -> i
+    com.heima.vdun.view.CountdownIndicator pbProgress -> j
+    android.widget.TextView tvCountdown -> k
+    android.os.Handler handler -> l
+    java.util.Timer timer -> o
+    android.app.ProgressDialog dialog -> p
+    android.content.SharedPreferences sp -> q
+    int countdown -> m
+    com.heima.vdun.entity.VersionInfo versionInfo -> n
+    float PHASE_STEP -> r
+    com.heima.vdun.global.App app -> s
+    boolean isCreated -> t
+    javax.crypto.Mac mac -> u
+    java.util.Calendar calendar -> v
+    long timeOffset -> w
+    float phase -> x
+    int[] OTPImages -> y
+    com.heima.vdun.dao.TokenInfoDao dao -> z
+    com.heima.vdun.util.PasscodeGenerator pcg -> A
+    com.heima.vdun.entity.TokenInfo tokenInfo -> B
+    java.lang.String passCode -> C
+    android.graphics.Typeface tf -> D
+    android.content.BroadcastReceiver updatePasscodeTime -> E
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void setPasscodeTime() -> d
+    void setPasscode() -> e
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void showCancelDialog() -> f
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onMenuItemSelected(int,android.view.MenuItem) -> onMenuItemSelected
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void checkVersion() -> a
+    void mCheckVersion() -> b
+    void createAlertDialog() -> c
+    void access$0(com.heima.vdun.PasscodePageActivity,com.heima.vdun.entity.TokenInfo) -> a
+    com.heima.vdun.entity.TokenInfo access$1(com.heima.vdun.PasscodePageActivity) -> a
+    void access$2(com.heima.vdun.PasscodePageActivity,long) -> a
+    void access$3(com.heima.vdun.PasscodePageActivity) -> b
+    void access$4(com.heima.vdun.PasscodePageActivity,float) -> a
+    void access$5(com.heima.vdun.PasscodePageActivity) -> c
+    void access$6(com.heima.vdun.PasscodePageActivity) -> d
+    void access$7(com.heima.vdun.PasscodePageActivity,boolean) -> a
+    void access$8(com.heima.vdun.PasscodePageActivity,int) -> a
+    void access$9(com.heima.vdun.PasscodePageActivity) -> e
+    com.heima.vdun.global.App access$10(com.heima.vdun.PasscodePageActivity) -> f
+    android.app.ProgressDialog access$11(com.heima.vdun.PasscodePageActivity) -> g
+    com.heima.vdun.dao.TokenInfoDao access$12(com.heima.vdun.PasscodePageActivity) -> h
+    java.util.Timer access$13(com.heima.vdun.PasscodePageActivity) -> i
+    void access$14(com.heima.vdun.PasscodePageActivity,java.util.Timer) -> a
+    android.content.SharedPreferences access$15(com.heima.vdun.PasscodePageActivity) -> j
+com.heima.vdun.PasscodePageActivity$1 -> com.heima.vdun.at:
+    com.heima.vdun.PasscodePageActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.heima.vdun.PasscodePageActivity$10 -> com.heima.vdun.au:
+    com.heima.vdun.PasscodePageActivity this$0 -> a
+    android.graphics.drawable.AnimationDrawable val$ad1 -> b
+    android.graphics.drawable.AnimationDrawable val$ad2 -> c
+    android.graphics.drawable.AnimationDrawable val$ad3 -> d
+    android.graphics.drawable.AnimationDrawable val$ad4 -> e
+    android.graphics.drawable.AnimationDrawable val$ad5 -> f
+    android.graphics.drawable.AnimationDrawable val$ad6 -> g
+    void run() -> run
+com.heima.vdun.PasscodePageActivity$2 -> com.heima.vdun.av:
+    com.heima.vdun.PasscodePageActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.heima.vdun.PasscodePageActivity$3 -> com.heima.vdun.aw:
+    com.heima.vdun.PasscodePageActivity this$0 -> a
+    void run() -> run
+com.heima.vdun.PasscodePageActivity$4 -> com.heima.vdun.ax:
+    com.heima.vdun.PasscodePageActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.PasscodePageActivity$5 -> com.heima.vdun.ay:
+    com.heima.vdun.PasscodePageActivity this$0 -> a
+    void run() -> run
+com.heima.vdun.PasscodePageActivity$6 -> com.heima.vdun.az:
+    com.heima.vdun.PasscodePageActivity this$0 -> a
+    void run() -> run
+com.heima.vdun.PasscodePageActivity$7 -> com.heima.vdun.ba:
+    com.heima.vdun.PasscodePageActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.PasscodePageActivity$8 -> com.heima.vdun.bb:
+    com.heima.vdun.PasscodePageActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.PasscodePageActivity$9 -> com.heima.vdun.bc:
+    com.heima.vdun.PasscodePageActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.PasscodePageActivity$UpdateTask -> com.heima.vdun.bd:
+    int i -> a
+    com.heima.vdun.PasscodePageActivity this$0 -> b
+    void run() -> run
+com.heima.vdun.SplashActivity -> com.heima.vdun.SplashActivity:
+    boolean isFirstUsed -> a
+    android.content.SharedPreferences sp -> b
+    java.lang.Thread thread -> c
+    com.heima.vdun.entity.TokenInfo tokenInfo -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void access$0(com.heima.vdun.SplashActivity) -> a
+    void access$1(com.heima.vdun.SplashActivity) -> b
+    java.lang.Thread access$2(com.heima.vdun.SplashActivity) -> c
+com.heima.vdun.SplashActivity$1 -> com.heima.vdun.be:
+    com.heima.vdun.SplashActivity this$0 -> a
+    void run() -> run
+com.heima.vdun.SplashActivity$2 -> com.heima.vdun.bf:
+    com.heima.vdun.SplashActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.SplashActivity$3 -> com.heima.vdun.bg:
+    com.heima.vdun.SplashActivity this$0 -> a
+    void onDismiss(android.content.DialogInterface) -> onDismiss
+com.heima.vdun.TimeChangedReceiver -> com.heima.vdun.TimeChangedReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.heima.vdun.TimeChangedReceiver$1 -> com.heima.vdun.bh:
+    com.heima.vdun.TimeChangedReceiver this$0 -> a
+    android.content.Context val$ctx -> b
+    void run() -> run
+com.heima.vdun.UnBindActivity -> com.heima.vdun.UnBindActivity:
+    android.widget.EditText etAccount -> a
+    android.widget.Button btUnBind -> b
+    android.app.ProgressDialog dialog -> c
+    android.os.Handler handler -> d
+    com.heima.vdun.global.App app -> e
+    java.lang.String account -> f
+    java.lang.String sn -> g
+    java.lang.String accountID -> h
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    void startUnBind() -> a
+    boolean checkNet() -> b
+    void showNetErrorDialog() -> c
+    void onResume() -> onResume
+    void onPause() -> onPause
+    java.lang.String access$0(com.heima.vdun.UnBindActivity) -> a
+    java.lang.String access$1(com.heima.vdun.UnBindActivity) -> b
+    java.lang.String access$2(com.heima.vdun.UnBindActivity) -> c
+    boolean access$3(com.heima.vdun.UnBindActivity) -> d
+    void access$4(com.heima.vdun.UnBindActivity) -> e
+    void access$5(com.heima.vdun.UnBindActivity) -> f
+com.heima.vdun.UnBindActivity$1 -> com.heima.vdun.bi:
+    com.heima.vdun.UnBindActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.heima.vdun.UnBindActivity$2 -> com.heima.vdun.bj:
+    com.heima.vdun.UnBindActivity this$0 -> a
+    void run() -> run
+com.heima.vdun.UnBindActivity$3 -> com.heima.vdun.bk:
+    com.heima.vdun.UnBindActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.heima.vdun.UnBindSucceedActivity -> com.heima.vdun.UnBindSucceedActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+com.heima.vdun.UnBindSucceedActivity$1 -> com.heima.vdun.bl:
+    com.heima.vdun.UnBindSucceedActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.heima.vdun.WebBindActivity -> com.heima.vdun.WebBindActivity:
+    android.widget.Button btStartCamera -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    void onResume() -> onResume
+    void onPause() -> onPause
+com.heima.vdun.adapter.AccountListAdapter -> com.heima.vdun.a.a:
+    java.util.List list -> a
+    android.view.LayoutInflater inflater -> b
+    com.heima.vdun.util.ImageDownloader downloader -> c
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.heima.vdun.adapter.AccountListAdapter$ViewHolder -> com.heima.vdun.a.b:
+    android.widget.ImageView image -> a
+    android.widget.TextView name -> b
+    android.widget.TextView account -> c
+com.heima.vdun.adapter.AddAccountAdapter -> com.heima.vdun.a.c:
+    java.util.List list -> a
+    android.view.LayoutInflater inflater -> b
+    com.heima.vdun.util.ImageDownloader downloader -> c
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.heima.vdun.adapter.AddAccountAdapter$ViewHolder -> com.heima.vdun.a.d:
+    android.widget.ImageView image -> a
+    android.widget.TextView name -> b
+com.heima.vdun.camera.AutoFocusCallback -> com.heima.vdun.b.a:
+    java.lang.String TAG -> a
+    android.os.Handler autoFocusHandler -> b
+    int autoFocusMessage -> c
+    void setHandler(android.os.Handler,int) -> a
+    void onAutoFocus(boolean,android.hardware.Camera) -> onAutoFocus
+com.heima.vdun.camera.CameraConfigurationManager -> com.heima.vdun.b.b:
+    java.lang.String TAG -> a
+    java.util.regex.Pattern COMMA_PATTERN -> b
+    android.content.Context context -> c
+    android.graphics.Point screenResolution -> d
+    android.graphics.Point cameraResolution -> e
+    int previewFormat -> f
+    java.lang.String previewFormatString -> g
+    void initFromCameraParameters(android.hardware.Camera) -> a
+    void setDesiredCameraParameters(android.hardware.Camera) -> b
+    android.graphics.Point getCameraResolution() -> a
+    android.graphics.Point getScreenResolution() -> b
+    int getPreviewFormat() -> c
+    java.lang.String getPreviewFormatString() -> d
+    android.graphics.Point findBestPreviewSizeValue(java.lang.CharSequence,android.graphics.Point) -> a
+    int findBestMotZoomValue(java.lang.CharSequence,int) -> a
+com.heima.vdun.camera.CameraManager -> com.heima.vdun.b.c:
+    java.lang.String TAG -> b
+    com.heima.vdun.camera.CameraManager cameraManager -> c
+    int SDK_INT -> a
+    android.content.Context context -> d
+    com.heima.vdun.camera.CameraConfigurationManager configManager -> e
+    android.hardware.Camera camera -> f
+    android.graphics.Rect framingRect -> g
+    android.graphics.Rect framingRectInPreview -> h
+    boolean initialized -> i
+    boolean previewing -> j
+    boolean useOneShotPreviewCallback -> k
+    com.heima.vdun.camera.PreviewCallback previewCallback -> l
+    com.heima.vdun.camera.AutoFocusCallback autoFocusCallback -> m
+    void init(android.content.Context) -> a
+    com.heima.vdun.camera.CameraManager get() -> a
+    void openDriver(android.view.SurfaceHolder) -> a
+    void closeDriver() -> b
+    void startPreview() -> c
+    void stopPreview() -> d
+    void requestPreviewFrame$2a8797e(android.os.Handler) -> a
+    void requestAutoFocus$2a8797e(android.os.Handler) -> b
+    android.graphics.Rect getFramingRect() -> e
+    com.heima.vdun.camera.PlanarYUVLuminanceSource buildLuminanceSource(byte[],int,int) -> a
+com.heima.vdun.camera.PlanarYUVLuminanceSource -> com.heima.vdun.b.d:
+    byte[] yuvData -> a
+    int dataWidth -> b
+    int dataHeight -> c
+    int left -> d
+    int top -> e
+    byte[] getRow(int,byte[]) -> a
+    byte[] getMatrix() -> a
+    android.graphics.Bitmap renderCroppedGreyscaleBitmap() -> d
+com.heima.vdun.camera.PreviewCallback -> com.heima.vdun.b.e:
+    java.lang.String TAG -> a
+    com.heima.vdun.camera.CameraConfigurationManager configManager -> b
+    boolean useOneShotPreviewCallback -> c
+    android.os.Handler previewHandler -> d
+    int previewMessage -> e
+    void setHandler(android.os.Handler,int) -> a
+    void onPreviewFrame(byte[],android.hardware.Camera) -> onPreviewFrame
+com.heima.vdun.dao.TokenInfoDBHelper -> com.heima.vdun.c.a:
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+com.heima.vdun.dao.TokenInfoDao -> com.heima.vdun.c.b:
+    com.heima.vdun.dao.TokenInfoDBHelper helper -> a
+    java.lang.String IMEI -> b
+    void add(com.heima.vdun.entity.TokenInfo) -> a
+    void updateTime(java.lang.Long) -> a
+    com.heima.vdun.entity.TokenInfo getTokenInfo() -> a
+com.heima.vdun.decoding.CaptureActivityHandler -> com.heima.vdun.d.a:
+    java.lang.String TAG -> a
+    com.heima.vdun.CaptureActivity activity -> b
+    com.heima.vdun.decoding.DecodeThread decodeThread -> c
+    com.heima.vdun.decoding.CaptureActivityHandler$State state -> d
+    void handleMessage(android.os.Message) -> handleMessage
+    void quitSynchronously() -> a
+    void restartPreviewAndDecode() -> b
+com.heima.vdun.decoding.CaptureActivityHandler$State -> com.heima.vdun.d.b:
+    com.heima.vdun.decoding.CaptureActivityHandler$State PREVIEW -> a
+    com.heima.vdun.decoding.CaptureActivityHandler$State SUCCESS -> b
+    com.heima.vdun.decoding.CaptureActivityHandler$State DONE -> c
+    com.heima.vdun.decoding.CaptureActivityHandler$State[] ENUM$VALUES -> d
+    com.heima.vdun.decoding.CaptureActivityHandler$State[] values() -> values
+    com.heima.vdun.decoding.CaptureActivityHandler$State valueOf(java.lang.String) -> valueOf
+com.heima.vdun.decoding.DecodeFormatManager -> com.heima.vdun.d.c:
+    java.util.regex.Pattern COMMA_PATTERN -> e
+    java.util.Vector PRODUCT_FORMATS -> a
+    java.util.Vector ONE_D_FORMATS -> b
+    java.util.Vector QR_CODE_FORMATS -> c
+    java.util.Vector DATA_MATRIX_FORMATS -> d
+com.heima.vdun.decoding.DecodeHandler -> com.heima.vdun.d.d:
+    java.lang.String TAG -> a
+    com.heima.vdun.CaptureActivity activity -> b
+    com.google.zxing.MultiFormatReader multiFormatReader -> c
+    void handleMessage(android.os.Message) -> handleMessage
+com.heima.vdun.decoding.DecodeThread -> com.heima.vdun.d.e:
+    com.heima.vdun.CaptureActivity activity -> a
+    java.util.Hashtable hints -> b
+    android.os.Handler handler -> c
+    java.util.concurrent.CountDownLatch handlerInitLatch -> d
+    android.os.Handler getHandler() -> a
+    void run() -> run
+com.heima.vdun.decoding.FinishListener -> com.heima.vdun.d.f:
+    android.app.Activity activityToFinish -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+    void onClick(android.content.DialogInterface,int) -> onClick
+    void run() -> run
+com.heima.vdun.decoding.InactivityTimer -> com.heima.vdun.d.g:
+    java.util.concurrent.ScheduledExecutorService inactivityTimer -> a
+    android.app.Activity activity -> b
+    java.util.concurrent.ScheduledFuture inactivityFuture -> c
+    void onActivity() -> a
+    void cancel() -> c
+    void shutdown() -> b
+com.heima.vdun.decoding.InactivityTimer$DaemonThreadFactory -> com.heima.vdun.d.h:
+    java.lang.Thread newThread(java.lang.Runnable) -> newThread
+com.heima.vdun.entity.AccountBean -> com.heima.vdun.e.a:
+    java.lang.String name -> a
+    java.lang.String id -> b
+    java.lang.String iconUrl -> c
+    java.lang.String account -> d
+    java.lang.String entry -> e
+    java.lang.String createTime -> f
+com.heima.vdun.entity.AccountInfo -> com.heima.vdun.e.b:
+    java.lang.String id -> a
+    java.lang.String name -> b
+    java.lang.String entry -> c
+    java.lang.String iconUrl -> d
+    java.lang.String des -> e
+    java.lang.String createTime -> f
+    java.lang.String updateTime -> g
+com.heima.vdun.entity.BindResult -> com.heima.vdun.e.c:
+    int result -> a
+    java.lang.String message -> b
+com.heima.vdun.entity.TokenInfo -> com.heima.vdun.e.d:
+    java.lang.String SN -> a
+    java.lang.String data -> b
+    long tokenTime -> c
+com.heima.vdun.entity.VersionInfo -> com.heima.vdun.e.e:
+    java.lang.String versionCode -> a
+    java.lang.String versionName -> b
+    java.lang.String downloadUrl -> c
+    java.lang.String description -> d
+com.heima.vdun.global.App -> com.heima.vdun.global.App:
+    com.heima.vdun.dao.TokenInfoDao dao -> a
+    java.lang.String IMEI -> b
+    java.lang.String otp -> c
+    android.telephony.TelephonyManager telephonyManager -> d
+    java.util.List activityList -> e
+    void onCreate() -> onCreate
+    void addActivity(android.app.Activity) -> a
+    void exit() -> a
+    void finishInitActivity() -> b
+com.heima.vdun.global.GlobalConstants -> com.heima.vdun.global.a:
+    java.lang.String SAVE_DIR -> a
+com.heima.vdun.service.HttpManager -> com.heima.vdun.service.a:
+    org.apache.http.impl.client.DefaultHttpClient sClient -> a
+com.heima.vdun.service.NetService -> com.heima.vdun.service.b:
+    org.apache.http.client.HttpClient httpClient -> a
+    com.heima.vdun.entity.VersionInfo getVersion() -> a
+    com.heima.vdun.entity.TokenInfo getTokenInfo$23f053ec() -> b
+    java.lang.Long checkTime() -> c
+    int verifyBind$19b96c78(java.lang.String,java.lang.String) -> a
+    com.heima.vdun.entity.BindResult bind$1adb8157(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    int unBind$46a05a74(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> b
+    java.util.List getAccountList$51cd0212() -> d
+    java.util.List getList(java.util.List,java.lang.String) -> a
+    java.util.List getVsnList(java.util.List,java.lang.String) -> b
+    java.lang.String readFromCache() -> e
+    java.lang.String vsnReadFromCache() -> f
+    java.util.List getVsnUid$51cd0212(java.lang.String) -> a
+com.heima.vdun.service.TrustAllManager -> com.heima.vdun.service.c:
+    void checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkClientTrusted
+    void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkServerTrusted
+    java.security.cert.X509Certificate[] getAcceptedIssuers() -> getAcceptedIssuers
+com.heima.vdun.service.TrustAllSSLSocketFactory -> com.heima.vdun.service.d:
+    javax.net.ssl.SSLSocketFactory factory -> a
+    org.apache.http.conn.scheme.SocketFactory getDefault() -> a
+    java.net.Socket createSocket() -> createSocket
+    java.net.Socket createSocket(java.net.Socket,java.lang.String,int,boolean) -> createSocket
+com.heima.vdun.service.UpdateOTPService -> com.heima.vdun.service.UpdateOTPService:
+    android.os.Handler handler -> b
+    java.util.Timer timer -> c
+    com.heima.vdun.global.App app -> d
+    javax.crypto.Mac mac -> e
+    android.widget.RemoteViews remoteViews -> f
+    android.appwidget.AppWidgetManager appWidgetManager -> g
+    boolean stopService -> a
+    com.heima.vdun.util.PasscodeGenerator pcg -> h
+    android.content.ComponentName componentName -> i
+    com.heima.vdun.entity.TokenInfo tokenInfo -> j
+    android.app.PendingIntent passcodePagePendingIntent -> k
+    android.app.PendingIntent bindPendingIntent -> l
+    android.content.BroadcastReceiver updatePasscodeTime -> m
+    android.content.BroadcastReceiver bindSucceed -> n
+    android.app.KeyguardManager mKeyguardManager -> o
+    void onCreate() -> onCreate
+    void onStart(android.content.Intent,int) -> onStart
+    void onDestroy() -> onDestroy
+    void setPasscode() -> a
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    boolean isScreenLocked() -> b
+    void setOTPImage(java.lang.String) -> a
+    void access$0(com.heima.vdun.service.UpdateOTPService,com.heima.vdun.entity.TokenInfo) -> a
+    java.util.Timer access$1(com.heima.vdun.service.UpdateOTPService) -> a
+    void access$2(com.heima.vdun.service.UpdateOTPService,java.util.Timer) -> a
+    com.heima.vdun.entity.TokenInfo access$3(com.heima.vdun.service.UpdateOTPService) -> b
+    com.heima.vdun.global.App access$4(com.heima.vdun.service.UpdateOTPService) -> c
+    void access$5(com.heima.vdun.service.UpdateOTPService,javax.crypto.Mac) -> a
+    javax.crypto.Mac access$6(com.heima.vdun.service.UpdateOTPService) -> d
+    android.os.Handler access$7(com.heima.vdun.service.UpdateOTPService) -> e
+    void access$8(com.heima.vdun.service.UpdateOTPService,com.heima.vdun.util.PasscodeGenerator) -> a
+com.heima.vdun.service.UpdateOTPService$1 -> com.heima.vdun.service.e:
+    com.heima.vdun.service.UpdateOTPService this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.heima.vdun.service.UpdateOTPService$2 -> com.heima.vdun.service.f:
+    com.heima.vdun.service.UpdateOTPService this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.heima.vdun.service.UpdateOTPService$3 -> com.heima.vdun.service.g:
+    com.heima.vdun.service.UpdateOTPService this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.heima.vdun.service.UpdateOTPService$UpdateTask -> com.heima.vdun.service.h:
+    com.heima.vdun.service.UpdateOTPService this$0 -> a
+    void run() -> run
+com.heima.vdun.util.ImageDownloader -> com.heima.vdun.f.a:
+    java.util.HashMap sHardBitmapCache -> a
+    java.util.concurrent.ConcurrentHashMap sSoftBitmapCache -> b
+    android.os.Handler purgeHandler -> c
+    java.lang.Runnable purger -> d
+    void download(java.lang.String,android.widget.ImageView) -> a
+    void clearCache() -> a
+    boolean cancelPotentialDownload(java.lang.String,android.widget.ImageView) -> b
+    com.heima.vdun.util.ImageDownloader$BitmapDownloaderTask getBitmapDownloaderTask(android.widget.ImageView) -> b
+    android.graphics.Bitmap getBitmapFromCache(java.lang.String) -> c
+    java.lang.String getCacheFilePath(java.lang.String) -> a
+    void saveBitmapToLocalCache(java.lang.String,android.graphics.Bitmap) -> a
+    android.graphics.Bitmap getBitmapFromLocalCache(java.lang.String) -> b
+    void copy(java.io.InputStream,java.io.OutputStream) -> a
+    android.graphics.Bitmap getBitmapFromWeb(java.lang.String,java.lang.String) -> a
+    java.util.concurrent.ConcurrentHashMap access$0() -> b
+    java.util.HashMap access$1(com.heima.vdun.util.ImageDownloader) -> a
+    com.heima.vdun.util.ImageDownloader$BitmapDownloaderTask access$2(android.widget.ImageView) -> a
+com.heima.vdun.util.ImageDownloader$1 -> com.heima.vdun.f.b:
+    com.heima.vdun.util.ImageDownloader this$0 -> a
+    boolean removeEldestEntry(java.util.Map$Entry) -> removeEldestEntry
+com.heima.vdun.util.ImageDownloader$2 -> com.heima.vdun.f.c:
+    com.heima.vdun.util.ImageDownloader this$0 -> a
+    void run() -> run
+com.heima.vdun.util.ImageDownloader$BitmapDownloaderTask -> com.heima.vdun.f.d:
+    java.lang.String url -> b
+    java.lang.ref.WeakReference imageViewReference -> c
+    com.heima.vdun.util.ImageDownloader this$0 -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    java.lang.String access$2(com.heima.vdun.util.ImageDownloader$BitmapDownloaderTask) -> a
+com.heima.vdun.util.ImageDownloader$DownloadedDrawable -> com.heima.vdun.f.e:
+    java.lang.ref.WeakReference bitmapDownloaderTaskReference -> a
+    com.heima.vdun.util.ImageDownloader$BitmapDownloaderTask getBitmapDownloaderTask() -> a
+com.heima.vdun.util.LocalSeedEncrypt -> com.heima.vdun.f.f:
+    java.security.Key key -> a
+    java.lang.String PASSWORD -> b
+    java.lang.String getEncString(java.lang.String) -> a
+    java.lang.String getDesString(java.lang.String) -> b
+    void validateKey() -> a
+    byte[] getEncCode(byte[]) -> a
+    byte[] getDesCode(byte[]) -> b
+    byte[] hex2byte(byte[]) -> c
+com.heima.vdun.util.Logger -> com.heima.vdun.f.g:
+    int DEBUG_LEVEL -> a
+    int d(java.lang.String,java.lang.String) -> a
+    int i(java.lang.String,java.lang.String) -> b
+    int w(java.lang.String,java.lang.String) -> c
+    int e(java.lang.String,java.lang.String) -> d
+com.heima.vdun.util.NetSeedEncrypt -> com.heima.vdun.f.h:
+    java.security.Key key -> a
+    java.lang.String PASSWORD -> b
+    java.lang.String getDesString(java.lang.String) -> a
+    byte[] getDesCode(byte[]) -> a
+    byte[] hex2byte(byte[]) -> b
+com.heima.vdun.util.PasscodeGenerator -> com.heima.vdun.f.i:
+    int PIN_MODULO -> c
+    com.heima.vdun.util.PasscodeGenerator$Signer signer -> d
+    int codeLength -> e
+    int intervalPeriod -> f
+    boolean isCreated -> a
+    android.os.Handler handler -> g
+    long timeOffset -> b
+    com.heima.vdun.util.PasscodeGenerator$IntervalClock clock -> h
+    java.lang.String generateTimeoutCode(boolean,long) -> a
+    int hashToInt(byte[],int) -> a
+    android.os.Handler access$0(com.heima.vdun.util.PasscodeGenerator) -> a
+    int access$1(com.heima.vdun.util.PasscodeGenerator) -> b
+com.heima.vdun.util.PasscodeGenerator$1 -> com.heima.vdun.f.j:
+    com.heima.vdun.util.PasscodeGenerator this$0 -> a
+    long getCurrentInterval() -> a
+com.heima.vdun.util.PasscodeGenerator$2 -> com.heima.vdun.f.k:
+    javax.crypto.Mac val$mac -> a
+    byte[] sign(byte[]) -> a
+com.heima.vdun.util.PasscodeGenerator$IntervalClock -> com.heima.vdun.f.l:
+    long getCurrentInterval() -> a
+com.heima.vdun.util.PasscodeGenerator$Signer -> com.heima.vdun.f.m:
+    byte[] sign(byte[]) -> a
+com.heima.vdun.view.CountdownIndicator -> com.heima.vdun.view.CountdownIndicator:
+    double mPhase -> a
+    android.graphics.Paint mRemainingSectorPaint -> b
+    android.content.Context ctx -> c
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void setPhase(double) -> a
+com.heima.vdun.view.RingView -> com.heima.vdun.view.RingView:
+    android.graphics.Paint paint -> a
+    android.content.Context ctx -> b
+    void onDraw(android.graphics.Canvas) -> onDraw
+    int dip2px(android.content.Context,float) -> a
+com.heima.vdun.view.ViewfinderResultPointCallback -> com.heima.vdun.view.a:
+    com.heima.vdun.view.ViewfinderView viewfinderView -> a
+    void foundPossibleResultPoint(com.google.zxing.ResultPoint) -> a
+com.heima.vdun.view.ViewfinderView -> com.heima.vdun.view.ViewfinderView:
+    int[] SCANNER_ALPHA -> a
+    android.graphics.Paint paint -> b
+    android.graphics.Bitmap resultBitmap -> c
+    int maskColor -> d
+    int resultColor -> e
+    int frameColor -> f
+    int laserColor -> g
+    int resultPointColor -> h
+    int scannerAlpha -> i
+    java.util.Collection possibleResultPoints -> j
+    java.util.Collection lastPossibleResultPoints -> k
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void drawViewfinder() -> a
+    void drawResultBitmap(android.graphics.Bitmap) -> a
+    void addPossibleResultPoint(com.google.zxing.ResultPoint) -> a
+com.heima.vdun.widget.PasscodeWidget -> com.heima.vdun.widget.PasscodeWidget:
+    void onEnabled(android.content.Context) -> onEnabled
+    void onDisabled(android.content.Context) -> onDisabled
+    void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[]) -> onUpdate
+com.umeng.analytics.MobclickAgent -> com.umeng.a.a:
+    com.umeng.analytics.MobclickAgent c -> c
+    com.umeng.analytics.a d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    int g -> g
+    android.content.Context h -> h
+    android.os.Handler i -> i
+    com.umeng.analytics.UmengOnlineConfigureListener q -> j
+    java.lang.String a -> a
+    java.lang.String b -> b
+    void onPause(android.content.Context) -> a
+    void onResume(android.content.Context) -> b
+    void onError(android.content.Context) -> c
+    void a$62dc3a79(android.content.Context,java.lang.String) -> a
+    void b(android.content.Context) -> d
+    void b(android.content.Context,java.lang.String,java.lang.String,long,int) -> a
+    void b(android.content.Context,java.lang.String,java.util.Map,long) -> a
+    void a(android.content.Context,java.lang.String,java.util.Map,java.lang.String) -> a
+    void b(android.content.Context,java.lang.String,java.lang.String) -> a
+    void a(android.content.Context,android.content.SharedPreferences,java.lang.String,org.json.JSONObject) -> a
+    void a$5ffc00fd(android.content.Context) -> e
+    java.lang.String getUmengHttpHeader(android.content.Context) -> f
+    org.json.JSONObject d(android.content.Context) -> g
+    long[] e(android.content.Context,android.content.SharedPreferences) -> a
+    org.json.JSONArray b(org.json.JSONObject,org.json.JSONArray) -> a
+    java.lang.String a$bc2fcf7(android.content.Context,org.json.JSONObject,java.lang.String,boolean) -> a
+    boolean a(java.lang.String,android.content.Context) -> a
+    java.lang.String a(java.io.InputStream) -> a
+    org.json.JSONObject f(android.content.Context) -> h
+    void g(android.content.Context) -> i
+    android.content.SharedPreferences h(android.content.Context) -> j
+    android.content.SharedPreferences i(android.content.Context) -> k
+    android.content.SharedPreferences j(android.content.Context) -> l
+    java.lang.String l(android.content.Context) -> m
+    android.content.SharedPreferences m(android.content.Context) -> n
+    org.json.JSONObject p(android.content.Context) -> o
+    void d(android.content.Context,java.lang.String) -> b
+    int e(android.content.Context,java.lang.String) -> c
+    com.umeng.analytics.MobclickAgent a() -> a
+    void a$72837ee5(android.content.Context,org.json.JSONObject) -> a
+    void b$72837ee5(android.content.Context,org.json.JSONObject) -> b
+    void a(com.umeng.analytics.MobclickAgent,android.content.Context) -> a
+    void a$4238150d(com.umeng.analytics.MobclickAgent,android.content.Context,java.lang.String) -> a
+    void a$6bf94603(com.umeng.analytics.MobclickAgent,android.content.Context) -> b
+    void a(com.umeng.analytics.MobclickAgent,android.content.Context,java.lang.String,java.lang.String,long,int) -> a
+    void a(com.umeng.analytics.MobclickAgent,android.content.Context,java.lang.String,java.util.Map,long) -> a
+    void a(com.umeng.analytics.MobclickAgent,android.content.Context,java.lang.String,java.util.Map,java.lang.String) -> a
+    void b(com.umeng.analytics.MobclickAgent,android.content.Context,java.lang.String,java.lang.String) -> a
+com.umeng.analytics.MobclickAgent$a -> com.umeng.a.b:
+    java.lang.Object a -> a
+    android.content.Context b -> b
+    int c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    java.lang.String g -> g
+    int h -> h
+    long i -> i
+    java.util.Map j -> j
+    java.lang.String k -> k
+    void run() -> run
+com.umeng.analytics.MobclickAgent$b -> com.umeng.a.c:
+    java.lang.Object a -> a
+    com.umeng.analytics.MobclickAgent b -> b
+    android.content.Context c -> c
+    org.json.JSONObject d -> d
+    void run() -> run
+com.umeng.analytics.UmengOnlineConfigureListener -> com.umeng.a.d:
+com.umeng.analytics.a -> com.umeng.a.e:
+    java.lang.Thread$UncaughtExceptionHandler a -> a
+    android.content.Context b -> b
+    void a(android.content.Context) -> a
+    void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
+    org.json.JSONArray b(android.content.Context) -> b
+com.umeng.analytics.c -> com.umeng.a.f:
+    long d -> a
+    boolean g -> b
+    boolean h -> c
+    boolean i -> d
+    boolean j -> e
+    java.lang.String k -> f
+    java.lang.Object l -> g
+    java.lang.String[] n -> h
+    boolean q -> i
+com.umeng.analytics.d -> com.umeng.a.g:
+    java.lang.String a(android.content.Context) -> a
+com.umeng.common.Log -> com.umeng.common.a:
+    boolean LOG -> a
+    void a(java.lang.String,java.lang.String) -> a
+    void a(java.lang.String,java.lang.String,java.lang.Exception) -> a
+    void b(java.lang.String,java.lang.String) -> b
+    void b(java.lang.String,java.lang.String,java.lang.Exception) -> b
+    void c(java.lang.String,java.lang.String) -> c
+    void c(java.lang.String,java.lang.String,java.lang.Exception) -> c
+    void e(java.lang.String,java.lang.String) -> d
+com.umeng.common.a.a -> com.umeng.common.a.a:
+    int b(android.content.Context) -> a
+    int c(android.content.Context) -> b
+    int d(android.content.Context) -> c
+com.umeng.common.b -> com.umeng.common.b:
+    java.lang.String a -> a
+    java.lang.String d(android.content.Context) -> a
+    java.lang.String e(android.content.Context) -> b
+    boolean a(android.content.Context,java.lang.String) -> a
+    java.lang.String a() -> a
+    java.lang.String f(android.content.Context) -> c
+    java.lang.String[] j(android.content.Context) -> d
+    boolean k(android.content.Context) -> e
+    android.location.Location l(android.content.Context) -> f
+    boolean m(android.content.Context) -> g
+    boolean b() -> b
+    int n(android.content.Context) -> h
+    java.lang.String[] o(android.content.Context) -> i
+    java.lang.String p(android.content.Context) -> j
+    java.lang.String q(android.content.Context) -> o
+    java.lang.String r(android.content.Context) -> k
+    java.lang.String s(android.content.Context) -> l
+    java.lang.String c() -> c
+    java.lang.String t(android.content.Context) -> m
+    java.lang.String u(android.content.Context) -> n
+com.umeng.common.b.f -> com.umeng.common.b.a:
+    int a -> a
+    byte[] a(java.lang.String,java.lang.String) -> a
+com.umeng.common.b.g -> com.umeng.common.b.b:
+    java.lang.String a -> a
+    java.lang.String a(java.lang.String) -> a
+    java.lang.String b(java.lang.String) -> b
+    boolean c(java.lang.String) -> c
+    java.lang.String a() -> a
+com.umeng.common.c -> com.umeng.common.c:
+    java.lang.String a -> a
+    com.umeng.common.c b -> b
+    android.content.Context c -> c
+    java.lang.Class d -> d
+    java.lang.Class e -> e
+    java.lang.Class f -> f
+    java.lang.Class g -> g
+    java.lang.Class h -> h
+    java.lang.Class i -> i
+    java.lang.Class j -> j
+    com.umeng.common.c a(android.content.Context) -> a
+    int b(java.lang.String) -> a
+    int d(java.lang.String) -> b
+    int a(java.lang.Class,java.lang.String) -> a
+com.umeng.common.net.DownloadingService -> com.umeng.common.net.DownloadingService:
+    java.lang.String i -> b
+    android.app.NotificationManager j -> c
+    java.lang.String[] k -> d
+    java.util.Map l -> e
+    android.os.Messenger h -> a
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onStart(android.content.Intent,int) -> onStart
+    void onCreate() -> onCreate
+    void onDestroy() -> onDestroy
+    java.lang.String a() -> a
+    boolean a(com.umeng.common.net.a$a) -> a
+    java.util.Map b() -> b
+    void a(com.umeng.common.net.DownloadingService,com.umeng.common.net.a$a) -> a
+    android.app.NotificationManager a(com.umeng.common.net.DownloadingService) -> a
+    android.app.NotificationManager a(com.umeng.common.net.DownloadingService,android.app.NotificationManager) -> a
+    boolean a(android.content.Context) -> a
+    java.lang.String[] b(com.umeng.common.net.DownloadingService) -> b
+    void a(java.lang.String[]) -> a
+com.umeng.common.net.DownloadingService$a -> com.umeng.common.net.a:
+    android.content.Context b -> b
+    java.lang.String c -> c
+    android.app.Notification d -> d
+    int e -> e
+    int f -> f
+    int g -> g
+    int h -> h
+    com.umeng.common.net.a$a i -> i
+    android.os.Handler k -> j
+    com.umeng.common.net.DownloadingService a -> a
+    void run() -> run
+    void a(boolean) -> a
+    void a(java.lang.Exception) -> a
+    int a(com.umeng.common.net.DownloadingService$a) -> a
+    android.content.Context b(com.umeng.common.net.DownloadingService$a) -> b
+    com.umeng.common.net.a$a c(com.umeng.common.net.DownloadingService$a) -> c
+com.umeng.common.net.DownloadingService$b -> com.umeng.common.net.b:
+    com.umeng.common.net.DownloadingService a -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.umeng.common.net.a -> com.umeng.common.net.c:
+    java.lang.String b -> a
+com.umeng.common.net.a$a -> com.umeng.common.net.d:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+com.umeng.common.net.c -> com.umeng.common.net.e:
+    java.lang.String a -> a
+    android.content.Context i -> b
+    com.umeng.common.net.c$a k -> c
+    com.umeng.common.net.c a(android.content.Context) -> a
+    boolean a(java.lang.String,java.lang.String) -> a
+    void a(java.lang.String,java.lang.String,int) -> a
+    void a$13462e() -> a
+    void finalize() -> finalize
+    java.lang.String a() -> b
+com.umeng.common.net.c$a -> com.umeng.common.net.f:
+    com.umeng.common.net.c a -> a
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+com.umeng.common.net.c$b -> com.umeng.common.net.g:
+    com.umeng.common.net.c a -> a
+com.umeng.common.net.d -> com.umeng.common.net.h:
+    com.umeng.common.net.DownloadingService$a a -> a
+    void handleMessage(android.os.Message) -> handleMessage

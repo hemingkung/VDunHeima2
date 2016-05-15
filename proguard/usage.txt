@@ -1,0 +1,707 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.google.zxing.BarcodeFormat:
+    public java.lang.String getName()
+    public static com.google.zxing.BarcodeFormat valueOf(java.lang.String)
+com.google.zxing.BinaryBitmap:
+    public boolean isCropSupported()
+    public com.google.zxing.BinaryBitmap crop(int,int,int,int)
+com.google.zxing.EncodeHintType
+com.google.zxing.LuminanceSource:
+    public boolean isCropSupported()
+    public com.google.zxing.LuminanceSource crop(int,int,int,int)
+com.google.zxing.MultiFormatReader:
+    public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.MultiFormatWriter
+com.google.zxing.Reader:
+    public abstract com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.Result:
+    public byte[] getRawBytes()
+    public long getTimestamp()
+com.google.zxing.ResultMetadataType:
+    public java.lang.String getName()
+    public static com.google.zxing.ResultMetadataType valueOf(java.lang.String)
+com.google.zxing.Writer
+com.google.zxing.WriterException
+com.google.zxing.client.result.AbstractDoCoMoResultParser
+com.google.zxing.client.result.AddressBookAUResultParser
+com.google.zxing.client.result.AddressBookDoCoMoResultParser
+com.google.zxing.client.result.AddressBookParsedResult
+com.google.zxing.client.result.BizcardResultParser
+com.google.zxing.client.result.BookmarkDoCoMoResultParser
+com.google.zxing.client.result.CalendarParsedResult
+com.google.zxing.client.result.EmailAddressParsedResult
+com.google.zxing.client.result.EmailAddressResultParser
+com.google.zxing.client.result.EmailDoCoMoResultParser
+com.google.zxing.client.result.ExpandedProductParsedResult
+com.google.zxing.client.result.ExpandedProductResultParser
+com.google.zxing.client.result.GeoParsedResult
+com.google.zxing.client.result.GeoResultParser
+com.google.zxing.client.result.ISBNParsedResult
+com.google.zxing.client.result.ISBNResultParser
+com.google.zxing.client.result.ParsedResult
+com.google.zxing.client.result.ParsedResultType
+com.google.zxing.client.result.ProductParsedResult
+com.google.zxing.client.result.ProductResultParser
+com.google.zxing.client.result.ResultParser
+com.google.zxing.client.result.SMSMMSResultParser
+com.google.zxing.client.result.SMSParsedResult
+com.google.zxing.client.result.SMSTOMMSTOResultParser
+com.google.zxing.client.result.TelParsedResult
+com.google.zxing.client.result.TelResultParser
+com.google.zxing.client.result.TextParsedResult
+com.google.zxing.client.result.URIParsedResult
+com.google.zxing.client.result.URIResultParser
+com.google.zxing.client.result.URLTOResultParser
+com.google.zxing.client.result.VCardResultParser
+com.google.zxing.client.result.VEventResultParser
+com.google.zxing.client.result.WifiParsedResult
+com.google.zxing.client.result.WifiResultParser
+com.google.zxing.client.result.optional.AbstractNDEFResultParser
+com.google.zxing.client.result.optional.NDEFRecord
+com.google.zxing.client.result.optional.NDEFSmartPosterParsedResult
+com.google.zxing.client.result.optional.NDEFSmartPosterResultParser
+com.google.zxing.client.result.optional.NDEFTextResultParser
+com.google.zxing.client.result.optional.NDEFURIResultParser
+com.google.zxing.common.BitArray:
+    public int getSizeInBytes()
+    private void ensureCapacity(int)
+    public void flip(int)
+    public void setBulk(int,int)
+    public void appendBit(boolean)
+    public void appendBits(int,int)
+    public void appendBitArray(com.google.zxing.common.BitArray)
+    public void xor(com.google.zxing.common.BitArray)
+    public void toBytes(int,byte[],int,int)
+    public int[] getBitArray()
+com.google.zxing.common.BitMatrix:
+    public void clear()
+    public com.google.zxing.common.BitArray getRow(int,com.google.zxing.common.BitArray)
+com.google.zxing.common.CharacterSetECI:
+    public static com.google.zxing.common.CharacterSetECI getCharacterSetECIByName(java.lang.String)
+com.google.zxing.common.Collections:
+    private Collections()
+com.google.zxing.common.ECI:
+    public int getValue()
+    public static com.google.zxing.common.ECI getECIByValue(int)
+com.google.zxing.common.GlobalHistogramBinarizer:
+    private static final int LUMINANCE_BITS
+    private static final int LUMINANCE_SHIFT
+    private static final int LUMINANCE_BUCKETS
+com.google.zxing.common.GridSampler:
+    public static void setGridSampler(com.google.zxing.common.GridSampler)
+com.google.zxing.common.HybridBinarizer:
+    private static final int MINIMUM_DIMENSION
+com.google.zxing.common.PerspectiveTransform:
+    public void transformPoints(float[],float[])
+com.google.zxing.common.StringUtils:
+    public static final java.lang.String SHIFT_JIS
+    private static final java.lang.String EUC_JP
+    private static final java.lang.String UTF8
+    private static final java.lang.String ISO88591
+    private StringUtils()
+com.google.zxing.common.detector.MonochromeRectangleDetector
+com.google.zxing.common.detector.WhiteRectangleDetector:
+    private static final int INIT_SIZE
+    private static final int CORR
+com.google.zxing.common.reedsolomon.GF256Poly:
+    int[] getCoefficients()
+    com.google.zxing.common.reedsolomon.GF256Poly[] divide(com.google.zxing.common.reedsolomon.GF256Poly)
+com.google.zxing.common.reedsolomon.ReedSolomonEncoder
+com.google.zxing.datamatrix.DataMatrixReader:
+    public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.datamatrix.decoder.DecodedBitStreamParser:
+    private static final int PAD_ENCODE
+    private static final int ASCII_ENCODE
+    private static final int C40_ENCODE
+    private static final int TEXT_ENCODE
+    private static final int ANSIX12_ENCODE
+    private static final int EDIFACT_ENCODE
+    private static final int BASE256_ENCODE
+    private DecodedBitStreamParser()
+com.google.zxing.datamatrix.decoder.Decoder:
+    public com.google.zxing.common.DecoderResult decode(boolean[][])
+com.google.zxing.multi.ByQuadrantReader
+com.google.zxing.multi.GenericMultipleBarcodeReader
+com.google.zxing.multi.MultipleBarcodeReader
+com.google.zxing.multi.qrcode.QRCodeMultiReader
+com.google.zxing.multi.qrcode.detector.MultiDetector
+com.google.zxing.multi.qrcode.detector.MultiFinderPatternFinder
+com.google.zxing.multi.qrcode.detector.MultiFinderPatternFinder$1
+com.google.zxing.multi.qrcode.detector.MultiFinderPatternFinder$ModuleSizeComparator
+com.google.zxing.oned.CodaBarReader:
+    private static final java.lang.String ALPHABET_STRING
+    private static final int minCharacterLength
+com.google.zxing.oned.Code128Reader:
+    private static final int MAX_AVG_VARIANCE
+    private static final int MAX_INDIVIDUAL_VARIANCE
+    private static final int CODE_SHIFT
+    private static final int CODE_CODE_C
+    private static final int CODE_CODE_B
+    private static final int CODE_CODE_A
+    private static final int CODE_FNC_1
+    private static final int CODE_FNC_2
+    private static final int CODE_FNC_3
+    private static final int CODE_FNC_4_A
+    private static final int CODE_FNC_4_B
+    private static final int CODE_START_A
+    private static final int CODE_START_B
+    private static final int CODE_START_C
+    private static final int CODE_STOP
+com.google.zxing.oned.Code128Writer
+com.google.zxing.oned.Code39Reader:
+    static final java.lang.String ALPHABET_STRING
+    public Code39Reader(boolean,boolean)
+com.google.zxing.oned.Code39Writer
+com.google.zxing.oned.Code93Reader:
+    private static final java.lang.String ALPHABET_STRING
+com.google.zxing.oned.EAN13Writer
+com.google.zxing.oned.EAN8Writer
+com.google.zxing.oned.ITFReader:
+    private static final int MAX_AVG_VARIANCE
+    private static final int MAX_INDIVIDUAL_VARIANCE
+    private static final int W
+    private static final int N
+com.google.zxing.oned.ITFWriter
+com.google.zxing.oned.OneDReader:
+    protected static final int INTEGER_MATH_SHIFT
+    protected static final int PATTERN_MATCH_RESULT_SCALE_FACTOR
+    public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.oned.UPCAReader:
+    public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.oned.UPCEANReader:
+    private static final int MAX_AVG_VARIANCE
+    private static final int MAX_INDIVIDUAL_VARIANCE
+com.google.zxing.oned.UPCEANWriter
+com.google.zxing.oned.rss.AbstractRSSReader:
+    private static final int MAX_AVG_VARIANCE
+    private static final int MAX_INDIVIDUAL_VARIANCE
+    private static final float MIN_FINDER_PATTERN_RATIO
+    private static final float MAX_FINDER_PATTERN_RATIO
+com.google.zxing.oned.rss.RSSUtils:
+    private RSSUtils()
+    static int[] getRSSwidths(int,int,int,int,boolean)
+    static int[] elements(int[],int,int)
+com.google.zxing.oned.rss.expanded.BitArrayBuilder:
+    private BitArrayBuilder()
+com.google.zxing.oned.rss.expanded.RSSExpandedReader:
+    private static final int FINDER_PAT_A
+    private static final int FINDER_PAT_B
+    private static final int FINDER_PAT_C
+    private static final int FINDER_PAT_D
+    private static final int FINDER_PAT_E
+    private static final int FINDER_PAT_F
+    private static final int MAX_PAIRS
+com.google.zxing.oned.rss.expanded.decoders.AI01392xDecoder:
+    private static final int headerSize
+    private static final int lastDigitSize
+com.google.zxing.oned.rss.expanded.decoders.AI01393xDecoder:
+    private static final int headerSize
+    private static final int lastDigitSize
+    private static final int firstThreeDigitsSize
+com.google.zxing.oned.rss.expanded.decoders.AI013x0x1xDecoder:
+    private static final int headerSize
+    private static final int weightSize
+    private static final int dateSize
+com.google.zxing.oned.rss.expanded.decoders.AI013x0xDecoder:
+    private static final int headerSize
+    private static final int weightSize
+com.google.zxing.oned.rss.expanded.decoders.AI01AndOtherAIs:
+    private static final int HEADER_SIZE
+com.google.zxing.oned.rss.expanded.decoders.AI01decoder:
+    protected static final int gtinSize
+com.google.zxing.oned.rss.expanded.decoders.AnyAIDecoder:
+    private static final int HEADER_SIZE
+com.google.zxing.oned.rss.expanded.decoders.CurrentParsingState:
+    private static final int NUMERIC
+    private static final int ALPHA
+    private static final int ISO_IEC_646
+    boolean isNumeric()
+com.google.zxing.oned.rss.expanded.decoders.DecodedChar:
+    static final char FNC1
+com.google.zxing.oned.rss.expanded.decoders.DecodedNumeric:
+    static final int FNC1
+    int getValue()
+    boolean isAnyFNC1()
+com.google.zxing.oned.rss.expanded.decoders.FieldParser:
+    private FieldParser()
+com.google.zxing.pdf417.PDF417Reader:
+    public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.pdf417.decoder.BitMatrixParser:
+    private static final int MAX_ROW_DIFFERENCE
+    private static final int MAX_ROWS
+    private static final int MAX_CW_CAPACITY
+    private static final int MODULES_IN_SYMBOL
+com.google.zxing.pdf417.decoder.DecodedBitStreamParser:
+    private static final int TEXT_COMPACTION_MODE_LATCH
+    private static final int BYTE_COMPACTION_MODE_LATCH
+    private static final int NUMERIC_COMPACTION_MODE_LATCH
+    private static final int BYTE_COMPACTION_MODE_LATCH_6
+    private static final int BEGIN_MACRO_PDF417_CONTROL_BLOCK
+    private static final int BEGIN_MACRO_PDF417_OPTIONAL_FIELD
+    private static final int MACRO_PDF417_TERMINATOR
+    private static final int MODE_SHIFT_TO_BYTE_COMPACTION_MODE
+    private static final int MAX_NUMERIC_CODEWORDS
+    private static final int ALPHA
+    private static final int LOWER
+    private static final int MIXED
+    private static final int PUNCT
+    private static final int PUNCT_SHIFT
+    private static final int PL
+    private static final int LL
+    private static final int AS
+    private static final int ML
+    private static final int AL
+    private static final int PS
+    private static final int PAL
+    private DecodedBitStreamParser()
+com.google.zxing.pdf417.decoder.Decoder:
+    private static final int MAX_ERRORS
+    private static final int MAX_EC_CODEWORDS
+    public com.google.zxing.common.DecoderResult decode(boolean[][])
+com.google.zxing.pdf417.detector.Detector:
+    private static final int MAX_AVG_VARIANCE
+    private static final int MAX_INDIVIDUAL_VARIANCE
+    private static final int SKEW_THRESHOLD
+com.google.zxing.qrcode.QRCodeReader:
+    protected com.google.zxing.qrcode.decoder.Decoder getDecoder()
+    public com.google.zxing.Result decode(com.google.zxing.BinaryBitmap)
+com.google.zxing.qrcode.QRCodeWriter
+com.google.zxing.qrcode.decoder.DecodedBitStreamParser:
+    private DecodedBitStreamParser()
+com.google.zxing.qrcode.decoder.Decoder:
+    public com.google.zxing.common.DecoderResult decode(boolean[][])
+    public com.google.zxing.common.DecoderResult decode(boolean[][],java.util.Hashtable)
+    public com.google.zxing.common.DecoderResult decode(com.google.zxing.common.BitMatrix)
+com.google.zxing.qrcode.decoder.ErrorCorrectionLevel:
+    public int getBits()
+    public java.lang.String getName()
+com.google.zxing.qrcode.decoder.FormatInformation:
+    private static final int FORMAT_INFO_MASK_QR
+com.google.zxing.qrcode.decoder.Mode:
+    public int getBits()
+    public java.lang.String getName()
+com.google.zxing.qrcode.decoder.Version$ECBlocks:
+    public int getNumBlocks()
+    public int getTotalECCodewords()
+com.google.zxing.qrcode.detector.Detector:
+    protected com.google.zxing.common.BitMatrix getImage()
+    protected com.google.zxing.ResultPointCallback getResultPointCallback()
+    public com.google.zxing.common.DetectorResult detect()
+com.google.zxing.qrcode.detector.FinderPatternFinder:
+    private static final int CENTER_QUORUM
+    protected static final int MIN_SKIP
+    protected static final int MAX_MODULES
+    private static final int INTEGER_MATH_SHIFT
+    public FinderPatternFinder(com.google.zxing.common.BitMatrix)
+    protected com.google.zxing.common.BitMatrix getImage()
+    protected java.util.Vector getPossibleCenters()
+com.google.zxing.qrcode.encoder.BlockPair
+com.google.zxing.qrcode.encoder.ByteMatrix
+com.google.zxing.qrcode.encoder.Encoder
+com.google.zxing.qrcode.encoder.MaskUtil
+com.google.zxing.qrcode.encoder.MatrixUtil
+com.google.zxing.qrcode.encoder.QRCode
+com.heima.vdun.AccountListActivity:
+    private static final int NET_ERROR
+    private static final int SUCCEED
+com.heima.vdun.AddAccountActivity:
+    private static final int NET_ERROR
+    private static final int SUCCEED
+com.heima.vdun.BindActivity:
+    private static final int NET_ERROR
+    private static final int DISSMISS_PROGRESS_DIALOG
+    private static final int BIND_FAILED
+    private static final int BIND_SUCCEED
+    private static final int CARD_NOT_BIND_PHONENUMBER
+    private static final int ACCOUNT_NOT_BIND_PHONENUMBER
+    private static final int ACCOUNT_NOT_MATCH_PHONENUMBER
+    private static final int VERIFY_FAILED
+    private static final int VERIFY_OK
+com.heima.vdun.BuildConfig
+com.heima.vdun.CaptureActivity:
+    private static final float BEEP_VOLUME
+    private static final int BIND_FAILED
+    private static final int BIND_SUCCEED
+    private static final long VIBRATE_DURATION
+com.heima.vdun.InitActivity:
+    private static final int NET_ERROR
+    private static final int DISSMISS_PROGRESS_DIALOG
+    private static final int VERIFY_BIND_FAILED
+    private static final int VERIFY_BIND_SUCCEED
+    private static final int INIT_CANCELED
+com.heima.vdun.PasscodePageActivity:
+    private static final int REFRESH_INTERVAL_SEC
+    private static final int MORE
+    private static final int HELP
+    private static final int ABOUT
+    private static final int CANCEL
+    private static final int ACCOUNT_LIST
+    private static final int UPDATE_VERSION
+    private static final int UPDATE
+    private static final int COUNT_DOWN
+    private static final int CHECK_TIME_ERROR
+    private static final int CHECK_TIME_SUCCEED
+    private static final int NET_ERROR
+    private static final int GET_VERSION_ERROR
+    private static final int SHOW_UPDATE_DIALOG
+    private static final int UPDATE_DIALOG
+    private static final int ADJUST_TIME
+    private static final int UPDATE_PROGRESS
+    private static final int TIMER_STEP
+com.heima.vdun.R
+com.heima.vdun.R$attr
+com.heima.vdun.R$color
+com.heima.vdun.R$dimen
+com.heima.vdun.R$drawable
+com.heima.vdun.R$id
+com.heima.vdun.R$layout
+com.heima.vdun.R$raw
+com.heima.vdun.R$string
+com.heima.vdun.R$style
+com.heima.vdun.R$xml
+com.heima.vdun.UnBindActivity:
+    com.heima.vdun.entity.TokenInfo info
+    private static final int NET_ERROR
+    private static final int UNBIND_FAILED
+    private static final int UNBIND_SUCCEED
+com.heima.vdun.camera.AutoFocusCallback:
+    private static final long AUTOFOCUS_INTERVAL_MS
+com.heima.vdun.camera.CameraConfigurationManager:
+    private static final int TEN_DESIRED_ZOOM
+com.heima.vdun.camera.CameraManager:
+    private static final int MIN_FRAME_WIDTH
+    private static final int MIN_FRAME_HEIGHT
+    private static final int MAX_FRAME_WIDTH
+    private static final int MAX_FRAME_HEIGHT
+com.heima.vdun.camera.FlashlightManager
+com.heima.vdun.camera.PlanarYUVLuminanceSource:
+    102:102:public boolean isCropSupported()
+    106:106:public int getDataWidth()
+    110:110:public int getDataHeight()
+com.heima.vdun.dao.TokenInfoDBHelper:
+    12:13:public TokenInfoDBHelper(android.content.Context,java.lang.String,android.database.sqlite.SQLiteDatabase$CursorFactory,int)
+com.heima.vdun.dao.TokenInfoDao:
+    88:99:public void delete()
+com.heima.vdun.decoding.DecodeFormatManager:
+    55:55:private DecodeFormatManager()
+    58:63:static java.util.Vector parseDecodeFormats(android.content.Intent)
+    67:71:static java.util.Vector parseDecodeFormats(android.net.Uri)
+    76:101:private static java.util.Vector parseDecodeFormats(java.lang.Iterable,java.lang.String)
+com.heima.vdun.decoding.DecodeThread:
+    public static final java.lang.String BARCODE_BITMAP
+com.heima.vdun.decoding.InactivityTimer:
+    private static final int INACTIVITY_DELAY_SECONDS
+com.heima.vdun.decoding.Intents
+com.heima.vdun.decoding.Intents$Encode
+com.heima.vdun.decoding.Intents$Scan
+com.heima.vdun.decoding.Intents$SearchBookContents
+com.heima.vdun.decoding.Intents$Share
+com.heima.vdun.decoding.Intents$WifiConnect
+com.heima.vdun.entity.AccountBean:
+    private static final long serialVersionUID
+    19:24:public AccountBean(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+com.heima.vdun.global.GlobalConstants:
+    public static final java.lang.String CHECK_VERSION_URL
+    public static final java.lang.String GET_TOKEN_URL
+    public static final java.lang.String CHECK_TIME_URL
+    public static final java.lang.String VERIFY_BIND
+    public static final java.lang.String BIND
+    public static final java.lang.String UNBIND
+    public static final java.lang.String GET_ACCOUNT_LIST
+    public static final java.lang.String HELP_URL
+    public static final java.lang.String GET_VSN_UID_URL
+    public static final int REFRESH_INTERVAL_SEC
+    public static final int UPDATE_OTP
+    public static final java.lang.String SMS_NUMBER
+    public static final int VERIFY_BIND_TIMES
+    public static final java.lang.String UPDATE_PASSCODE_TIME
+    public static final java.lang.String GET_OTP_SUCCEED
+    5:5:public GlobalConstants()
+com.heima.vdun.service.HttpManager:
+    64:65:private HttpManager()
+    68:68:public static org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpHead)
+    72:72:public static org.apache.http.HttpResponse execute(org.apache.http.HttpHost,org.apache.http.client.methods.HttpGet)
+    76:76:public static org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpGet)
+    80:80:public static org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpPost)
+    84:84:public static synchronized org.apache.http.client.CookieStore getCookieStore()
+com.heima.vdun.service.NetService:
+    39:39:public NetService()
+    111:120:public static java.lang.String encrypt(java.lang.String,java.lang.String)
+    125:134:public static java.lang.String bytes2Hex(byte[])
+com.heima.vdun.service.TrustAllSSLSocketFactory:
+    54:54:public java.net.Socket createSocket(java.net.InetAddress,int,java.net.InetAddress,int)
+    58:58:public java.net.Socket createSocket(java.net.InetAddress,int)
+    63:63:public java.net.Socket createSocket(java.lang.String,int,java.net.InetAddress,int)
+    67:67:public java.net.Socket createSocket(java.lang.String,int)
+    71:71:public java.lang.String[] getDefaultCipherSuites()
+    75:75:public java.lang.String[] getSupportedCipherSuites()
+com.heima.vdun.service.UpdateOTPService:
+    private static final int REFRESH_INTERVAL_SEC
+    private static final int RESTART_SERVICE
+com.heima.vdun.test.MyTest
+com.heima.vdun.util.DesEncrypt
+com.heima.vdun.util.ImageDownloader:
+    private static final java.lang.String LOG_TAG
+    private static final int HARD_CACHE_CAPACITY
+    private static final int DELAY_BEFORE_PURGE
+    private static final int IO_BUFFER_SIZE
+    255:257:public static java.lang.String getPicFilePath(java.lang.String)
+    390:403:public android.graphics.Bitmap getBitmap(java.lang.String)
+com.heima.vdun.util.ImageDownloader$1:
+    private static final long serialVersionUID
+com.heima.vdun.util.Logger:
+    private static final int VERBOSE
+    private static final int DEBUG
+    private static final int INFO
+    private static final int WARN
+    private static final int ERROR
+    5:5:public Logger()
+    16:19:public static int v(java.lang.String,java.lang.String)
+com.heima.vdun.util.MD5
+com.heima.vdun.util.NetSeedEncrypt:
+    33:40:public java.lang.String getEncString(java.lang.String)
+    61:74:private byte[] getEncCode(byte[])
+    96:105:public static java.lang.String byte2hex(byte[])
+com.heima.vdun.util.PasscodeGenerator:
+    private static final int PASS_CODE_LENGTH
+    static final int INTERVAL
+    private static final int ADJACENT_INTERVALS
+    37:38:public PasscodeGenerator(javax.crypto.Mac)
+    103:104:public boolean verifyResponseCode(long,java.lang.String)
+    109:109:public boolean verifyTimeoutCode(java.lang.String)
+    115:132:public boolean verifyTimeoutCode(java.lang.String,int,int)
+com.heima.vdun.util.PasscodeGenerator$IntervalClock:
+    public abstract int getIntervalPeriod()
+com.heima.vdun.view.ViewfinderView:
+    private static final long ANIMATION_DELAY
+    private static final int OPAQUE
+com.umeng.analytics.Gender
+com.umeng.analytics.MobclickAgent:
+    private static final int j
+    private static final int k
+    private static final int l
+    private static final int m
+    private static final int n
+    private static final int o
+    private static final int p
+    private static final java.lang.String r
+    private static final java.lang.String s
+    private static final java.lang.String t
+    private static final java.lang.String u
+    private static final java.lang.String v
+    private static final java.lang.String w
+    private static final java.lang.String x
+    private static final java.lang.String y
+    private static final java.lang.String z
+    private static final java.lang.String A
+    private static final java.lang.String B
+    private static final java.lang.String C
+    private static final java.lang.String D
+    private static final java.lang.String E
+    private static final java.lang.String F
+    private static final java.lang.String G
+    private static final java.lang.String H
+    private static final java.lang.String I
+    private static final java.lang.String J
+    private static final java.lang.String K
+    private static final java.lang.String L
+    private static final java.lang.String M
+    private static final java.lang.String N
+    private static final java.lang.String O
+    private static final java.lang.String P
+    private static final java.lang.String Q
+    private static final java.lang.String R
+    private static final java.lang.String S
+    private static final java.lang.String T
+    private static final java.lang.String U
+    public static void setAutoLocation(boolean)
+    public static void setSessionContinueMillis(long)
+    public static void setOnlineConfigureListener(com.umeng.analytics.UmengOnlineConfigureListener)
+    public static void openActivityDurationTrack(boolean)
+    public static void setDebugMode(boolean)
+    public static void setDefaultReportPolicy(android.content.Context,int)
+    public static void onError(android.content.Context,java.lang.String)
+    public static void reportError(android.content.Context,java.lang.String)
+    public static void flush(android.content.Context)
+    public static void onEvent(android.content.Context,java.lang.String)
+    public static void onEvent(android.content.Context,java.lang.String,int)
+    public static void onEvent(android.content.Context,java.lang.String,java.lang.String,int)
+    public static void onEvent(android.content.Context,java.lang.String,java.lang.String)
+    private static void a(android.content.Context,java.lang.String,java.lang.String,long,int)
+    public static void onEvent(android.content.Context,java.lang.String,java.util.Map)
+    private static void a(android.content.Context,java.lang.String,java.util.Map,long)
+    public static void enterPage(android.content.Context,java.lang.String)
+    private synchronized void c(android.content.Context)
+    private void e(android.content.Context)
+    private org.json.JSONArray a(org.json.JSONObject,org.json.JSONArray)
+    public static void setOpenGLContext(javax.microedition.khronos.opengles.GL10)
+    public static java.lang.String getConfigParams(android.content.Context,java.lang.String)
+    private static java.lang.String o(android.content.Context)
+    private static void a(android.content.Context,int)
+    public static void updateOnlineConfig(android.content.Context,java.lang.String,java.lang.String)
+    public static void updateOnlineConfig(android.content.Context)
+    private synchronized void c(android.content.Context,java.lang.String)
+    public static void setGender(android.content.Context,com.umeng.analytics.Gender)
+    public static void setAge(android.content.Context,int)
+    public static void setUserID(android.content.Context,java.lang.String,java.lang.String)
+    public static void onEventDuration(android.content.Context,java.lang.String,long)
+    public static void onEventDuration(android.content.Context,java.lang.String,java.lang.String,long)
+    public static void onEventDuration(android.content.Context,java.lang.String,java.util.Map,long)
+    public static void onEventBegin(android.content.Context,java.lang.String)
+    public static void onEventEnd(android.content.Context,java.lang.String)
+    public static void onEventBegin(android.content.Context,java.lang.String,java.lang.String)
+    public static void onEventEnd(android.content.Context,java.lang.String,java.lang.String)
+    public static void onKVEventBegin(android.content.Context,java.lang.String,java.util.Map,java.lang.String)
+    public static void onKVEventEnd(android.content.Context,java.lang.String,java.lang.String)
+    static synthetic void b(com.umeng.analytics.MobclickAgent,android.content.Context,java.lang.String)
+com.umeng.analytics.MobclickAgent$1
+com.umeng.analytics.MobclickAgent$a:
+    MobclickAgent$a(android.content.Context,java.lang.String,java.lang.String,long,int,int)
+    MobclickAgent$a(android.content.Context,java.lang.String,java.util.Map,long,int)
+    MobclickAgent$a(android.content.Context,java.lang.String,java.util.Map,java.lang.String,int)
+com.umeng.analytics.ReportPolicy
+com.umeng.analytics.a:
+    private static final java.lang.String c
+com.umeng.analytics.b
+com.umeng.analytics.c:
+    static final java.lang.String a
+    static final java.lang.String b
+    static final java.lang.String c
+    static final int e
+    static final int f
+    static final java.lang.String m
+    static final java.lang.String o
+    static final java.lang.String p
+    static final java.lang.String r
+    static final java.lang.String s
+    static final java.lang.String t
+    static final java.lang.String u
+    static final java.lang.String v
+    static final java.lang.String w
+    static final java.lang.String x
+    static final java.lang.String y
+    static final java.lang.String z
+    c()
+com.umeng.analytics.d:
+    d()
+com.umeng.common.Log:
+    public Log()
+    public static void d(java.lang.String,java.lang.String)
+    public static void d(java.lang.String,java.lang.String,java.lang.Exception)
+    public static void e(java.lang.String,java.lang.String,java.lang.Exception)
+com.umeng.common.a
+com.umeng.common.a.a:
+    public a()
+com.umeng.common.a.b:
+    public b()
+com.umeng.common.b:
+    protected static final java.lang.String b
+    private static final java.lang.String d
+    private static final java.lang.String e
+    public static final int c
+    public static boolean a(java.lang.String,android.content.Context)
+    public static boolean a(android.content.Context)
+    public static java.util.Set b(android.content.Context)
+    public static boolean c(android.content.Context)
+    public static java.lang.String[] a(javax.microedition.khronos.opengles.GL10)
+    public static java.lang.String g(android.content.Context)
+    public static java.lang.String h(android.content.Context)
+    public static java.lang.String i(android.content.Context)
+    public static java.lang.String a(java.util.Date)
+    public static java.util.Date a(java.lang.String)
+    public static int a(java.util.Date,java.util.Date)
+    public static java.lang.String v(android.content.Context)
+com.umeng.common.b.a
+com.umeng.common.b.b
+com.umeng.common.b.c
+com.umeng.common.b.d
+com.umeng.common.b.e
+com.umeng.common.b.f:
+    public f()
+    public static java.lang.String a(byte[],java.lang.String)
+com.umeng.common.b.g:
+    private static final java.lang.String b
+    public g()
+    public static java.lang.String a(android.content.Context,long)
+    public static void a(android.content.Context,java.lang.String)
+    public static boolean b(android.content.Context,java.lang.String)
+    public static boolean d(java.lang.String)
+com.umeng.common.b.h
+com.umeng.common.b.i
+com.umeng.common.c:
+    public int a(java.lang.String)
+    public int c(java.lang.String)
+    public int e(java.lang.String)
+    public int f(java.lang.String)
+    public int g(java.lang.String)
+com.umeng.common.net.DownloadingService:
+    static final int a
+    static final int b
+    static final int c
+    static final int d
+    static final int e
+    static final int f
+    static final java.lang.String g
+com.umeng.common.net.DownloadingService$a:
+    private static final long j
+com.umeng.common.net.a:
+    private android.content.Context c
+    private com.umeng.common.net.e d
+    private android.os.Messenger e
+    private java.lang.String f
+    private java.lang.String g
+    private java.lang.String h
+    private java.lang.String[] i
+    final android.os.Messenger a
+    private android.content.ServiceConnection j
+    public void a(java.lang.String[])
+    public a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,com.umeng.common.net.e)
+    public void a()
+    static synthetic java.lang.String b()
+    static synthetic com.umeng.common.net.e a(com.umeng.common.net.a)
+    static synthetic android.content.ServiceConnection b(com.umeng.common.net.a)
+    static synthetic android.content.Context c(com.umeng.common.net.a)
+    static synthetic android.os.Messenger a(com.umeng.common.net.a,android.os.Messenger)
+    static synthetic java.lang.String d(com.umeng.common.net.a)
+    static synthetic java.lang.String e(com.umeng.common.net.a)
+    static synthetic java.lang.String f(com.umeng.common.net.a)
+    static synthetic android.os.Messenger g(com.umeng.common.net.a)
+com.umeng.common.net.a$a:
+    public android.os.Bundle a()
+com.umeng.common.net.a$b
+com.umeng.common.net.b
+com.umeng.common.net.c:
+    private static final java.lang.String b
+    private static final java.lang.String c
+    private static final java.lang.String d
+    private static final java.lang.String e
+    private static final java.lang.String f
+    private static final java.lang.String g
+    private static final java.lang.String h
+    private static final java.lang.String j
+    public void a(java.lang.String,java.lang.String,java.lang.String)
+    public int b(java.lang.String,java.lang.String)
+    public java.lang.String c(java.lang.String,java.lang.String)
+    public java.util.Date d(java.lang.String,java.lang.String)
+    public void e(java.lang.String,java.lang.String)
+    public java.util.List a(java.lang.String)
+com.umeng.common.net.c$a:
+    private static final int b
+    private static final java.lang.String c
+com.umeng.common.net.c$b:
+    private c$b()
+com.umeng.common.net.e
+com.umeng.common.net.f
+com.umeng.common.net.f$a
+com.umeng.common.net.f$b
+com.umeng.common.net.g
+com.umeng.common.net.h
+com.umeng.common.net.h$a
+com.umeng.common.net.i
+com.umeng.common.net.i$a
+com.umeng.common.net.i$b
+com.umeng.common.net.i$c
+com.umeng.common.net.j
+com.umeng.common.net.k
+com.umeng.common.net.l
