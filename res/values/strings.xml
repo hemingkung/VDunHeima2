@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">新浪微盾</string>
+    <string name="change2manual">改为手动输入</string>
+    <string name="change2camera">改用摄像头扫描</string>
+    <string name="bind_error">绑定失败！</string>
+    <string name="bind_error_later_try">绑定失败,请稍候重试</string>
+    <string name="bind_succeed">绑定成功！</string>
+    <string name="unbind_error">解绑失败！</string>
+    <string name="unbind_succeed">解绑成功！</string>
+    <string name="card_number">序列号:</string>
+    <string name="info">提示</string>
+    <string name="binding_info">正在绑定，请稍候...</string>
+    <string name="unbinding_info">正在解绑，请稍候...</string>
+    <string name="init_info">正在初始化，请稍候...</string>
+    <string name="check_time">校准时间</string>
+    <string name="checking_time_info">正在校准时间，请稍候...</string>
+    <string name="check_time_error">校准失败！</string>
+    <string name="check_time_ok">校准成功！</string>
+    <string name="exit_confirm">您确定要退出新浪微盾吗？</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="reset">解绑</string>
+    <string name="retry">重试</string>
+    <string name="help">帮助</string>
+    <string name="about">关于</string>
+    <string name="more">更多</string>
+    <string name="update">检查新版本</string>
+    <string name="exit">退出</string>
+    <string name="continues">继续</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="create_shortcut_confirm">您是否需要在桌面创建快捷方式？</string>
+    <string name="reset_confirm">您确定要解绑吗？</string>
+    <string name="net_set_confirm">网络连接出现异常，请重试！</string>
+    <string name="net_set">设置</string>
+    <string name="net_error">网络异常</string>
+    <string name="get_version_error">获取版本信息失败！</string>
+    <string name="find_new_version">发现最新版本</string>
+    <string name="download_now">立即下载</string>
+    <string name="downloading">正在下载,请稍候...</string>
+    <string name="update_later">以后再说</string>
+    <string name="checking_version">正在检测版本信息，请稍候...</string>
+    <string name="no_need_update">当前已经是最新版本,无需升级！</string>
+    <string name="need_check_time">系统时间被修改，请点击菜单按钮手动校准时间！</string>
+    
+    <string name="card_init">网站绑定</string>
+    <string name="card_init_text1">用电脑访问  vdun.weibo.com/m</string>
+    <string name="card_init_text2">然后您可以 </string>
+    
+    <string name="manual_input_text">手工输入初始码</string>
+    <string name="manual_input_text1">然后输入网页上的初始码</string>
+    <string name="manual_input_text2">完成</string>
+    
+    <string name="camera_input_text">摄像头扫描初始码</string>
+    <string name="camera_input_text1">然后点击启动摄像头按钮</string>
+    <string name="camera_input_text2">将手机对准网页上的二维码</string>
+    <string name="camera_input_text3">直至出现提示</string>
+    <string name="camera_input_text4">启动摄像头</string>
+    
+    <string name="passcode_page_text1">密码将在</string>
+    <string name="passcode_page_text2">秒后更新</string>
+    <string name="passcode_page_text3">当前令牌时间</string>
+    
+    <string name="splash_text">新浪微盾移动版正在启动...</string>
+    
+    <string name="bind_send_sms_ensure">绑定中程序会发送一条短信来确认密保手机，您是否继续？</string>
+    <string name="unbind_send_sms_ensure">解绑中程序会发送一条短信来确认密保手机，您是否继续？</string>
+    <string name="account_empty_info">您输入的帐号信息不能为空！</string>
+    <string name="send_sms_succeed">短信发送成功</string>
+    <string name="send_sms_failed">发送失败</string>
+    <string name="sms_delivered">对方接收成功</string>
+    <string name="send_sms_failed_info1">本设备发送短信失败，请使用密保手机发送短信\n</string>
+    <string name="send_sms_failed_info2">\n到</string>
+    <string name="send_sms_failed_info3">,发送完成后请点击确认按钮.</string>
+    
+        
+    <string name="passcode_page_passcode_text">动态密码:</string>
+    <string name="passcode_page_time_text">时间：</string>
+    <string name="passcode_page_cardnumber_text">序列号：</string>
+    <string name="passcode_page_countdown_text">秒后更新</string>
+    
+    <string name="bind_sms_button_text">短信快速初始化(推荐)</string>
+    <string name="bind_web_button_text">电脑登录网站初始化</string>
+    <string name="main_view_menu_account">帐号管理</string>
+    
+    <string name="account_list_dialog_text">请出入您要绑定的帐号</string>
+    <string name="bind">绑定</string>
+    <string name="unbind">解绑</string>
+    <string name="skip">跳过</string>
+    
+    <string name="bind_page_text1">请输入您的</string>
+    <string name="bind_page_text2">帐号</string>
+    
+    <string name="verify_bind_failed_info">序列号与手机号绑定失败！请登录网站进行绑定！</string>
+    <string name="init_canceled">已取消初始化</string>
+    <string name="about_version">版本：</string>
+    <string name="about_info">Copyright © 2012 SINA 新浪公司 版权所有</string>
+    
+    <string name="fast_bind">快速绑定</string>
+    <string name="input_account_name">请输入您的微博帐号</string>
+    <string name="start_bind">开始绑定</string>
+    <string name="bind_info">此功能仅限于密保手机用户使用，如果您不是密保手机用户，请通过网页方式进行绑定.</string>
+    <string name="bind_succeed_info">恭喜您绑定成功！</string>
+    <string name="unbind_succeed_info">恭喜您解绑成功！</string>
+    <string name="add_account">添加帐号</string>
+    
+    <string name="account_list_info1">您的微盾已绑定以下帐号，如需绑定其他帐号，请点击“添加帐号”绑定您需要绑定的帐号。</string>
+    <string name="account_list_info2">您的微盾还未跟任何帐号绑定，请点击“添加帐号”绑定您需要绑定的帐号。</string>
+    <string name="add_account_info">请选择您要绑定的帐号类型:</string>
+    
+    
+</resources>
